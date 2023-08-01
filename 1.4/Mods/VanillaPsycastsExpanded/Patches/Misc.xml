@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <!-- Space Marine Psyker Patch -->
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/PawnKindDef[defName = "BEWH_SpaceMarinePsyker"]</xpath>
+                <value>
+                    <modExtensions>
+                        <li Class="VanillaPsycastsExpanded.PawnKindAbilityExtension_Psycasts">
+                            <implantDef>VPE_PsycastAbilityImplant</implantDef>
+                            <initialLevel>10</initialLevel>
+                            <statUpgradePoints>2~6</statUpgradePoints>
+                            <unlockedPaths>
+                                <BEWH_Psyker>1~5|3~9</BEWH_Psyker>
+                            </unlockedPaths>
+                        </li>
+                    </modExtensions>
+                </value>
+            </li>
+            <!-- Undivided Psyker Patch -->
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/PawnKindDef[defName = "BEWH_ChaosMarineUndividedPsyker"]</xpath>
+                <value>
+                    <modExtensions>
+                        <li Class="VanillaPsycastsExpanded.PawnKindAbilityExtension_Psycasts">
+                            <implantDef>VPE_PsycastAbilityImplant</implantDef>
+                            <initialLevel>10</initialLevel>
+                            <statUpgradePoints>2~6</statUpgradePoints>
+                            <unlockedPaths>
+                                <BEWH_ChaosPsyker>1~5|3~9</BEWH_ChaosPsyker>
+                            </unlockedPaths>
+                        </li>
+                    </modExtensions>
+                </value>
+            </li>
+            <!-- Nurgle Psyker Patch -->
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/PawnKindDef[defName = "BEWH_ChaosMarineNurglePsyker"]</xpath>
+                <value>
+                    <modExtensions>
+                        <li Class="VanillaPsycastsExpanded.PawnKindAbilityExtension_Psycasts">
+                            <implantDef>VPE_PsycastAbilityImplant</implantDef>
+                            <initialLevel>10</initialLevel>
+                            <statUpgradePoints>2~6</statUpgradePoints>
+                            <unlockedPaths>
+                                <BEWH_ChaosPsyker>1~5|3~9</BEWH_ChaosPsyker>
+                                <!--<BEWH_NurglePsyker>1~5|3~9</BEWH_NurglePsyker>-->
+                            </unlockedPaths>
+                        </li>
+                    </modExtensions>
+                </value>
+            </li>
+            <!-- Slaanesh Psyker Patch -->
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/PawnKindDef[defName = "BEWH_ChaosMarineSlaaneshPsyker"]</xpath>
+                <value>
+                    <modExtensions>
+                        <li Class="VanillaPsycastsExpanded.PawnKindAbilityExtension_Psycasts">
+                            <implantDef>VPE_PsycastAbilityImplant</implantDef>
+                            <initialLevel>10</initialLevel>
+                            <statUpgradePoints>2~6</statUpgradePoints>
+                            <unlockedPaths>
+                                <BEWH_ChaosPsyker>1~5|3~9</BEWH_ChaosPsyker>
+                                <!--<BEWH_SlaaneshPsyker>1~5|3~9</BEWH_SlaaneshPsyker>-->
+                            </unlockedPaths>
+                        </li>
+                    </modExtensions>
+                </value>
+            </li>
+            <!-- Tzeentch Psyker Patch -->
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/PawnKindDef[defName = "BEWH_ChaosMarineTzeentchPsyker"]</xpath>
+                <value>
+                    <modExtensions>
+                        <li Class="VanillaPsycastsExpanded.PawnKindAbilityExtension_Psycasts">
+                            <implantDef>VPE_PsycastAbilityImplant</implantDef>
+                            <initialLevel>10</initialLevel>
+                            <statUpgradePoints>2~6</statUpgradePoints>
+                            <unlockedPaths>
+                                <BEWH_ChaosPsyker>1~5|3~9</BEWH_ChaosPsyker>
+                                <!--<BEWH_TzeentchPsyker>1~5|3~9</BEWH_TzeentchPsyker>-->
+                            </unlockedPaths>
+                        </li>
+                    </modExtensions>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+</Patch>

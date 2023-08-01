@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+  <!-- Psyker Path-->
+
+  <Psyker.PsykerPathDef>
+    <defName>BEWH_Psyker</defName>
+    <label>sanctioned psyker</label>
+    <description>Sanctioned psykers possess a rare willpower to control their abilities and not become a danger to others.</description>
+    <background>UI/Backgrounds/PsykerPath</background>
+    <altBackground>UI/AlternativeBackgrounds/PathBG_Psyker</altBackground>
+    <tab>Psyker Disciplines</tab>
+    <tooltip>Powerful sanctioned psyker psycasts</tooltip>
+    <lockedReason>Psykers only</lockedReason>
+    <requiredGeneAny>
+      <li>BEWH_Psyker</li>
+      <li>BEWH_IotaPsyker</li>
+      <li>BEWH_DeltaPsyker</li>
+      <li>BEWH_BetaPsyker</li>
+    </requiredGeneAny>
+  </Psyker.PsykerPathDef>
+
+  <!-- Undivided Chaos Psyker Path-->
+
+  <Psyker.PsykerPathDef>
+    <defName>BEWH_ChaosPsyker</defName>
+    <label>chaos psyker</label>
+    <description>Chaos psykers possess unhinged psychic prowess and is capable of various tasks such as summoning Daemons and unleashing devastating weaponised psychic powers upon the enemy.</description>
+    <background>UI/Backgrounds/ChaosPsykerPath</background>
+    <altBackground>UI/AlternativeBackgrounds/PathBG_ChaosPsyker</altBackground>
+    <tab>Psyker Disciplines</tab>
+    <tooltip>Powerful chaos psyker psycasts</tooltip>
+    <lockedReason>Psykers only</lockedReason>
+    <requiredGeneAny>
+      <li>BEWH_Psyker</li>
+      <li>BEWH_IotaPsyker</li>
+      <li>BEWH_DeltaPsyker</li>
+      <li>BEWH_BetaPsyker</li>
+    </requiredGeneAny>
+  </Psyker.PsykerPathDef>
+
+  <!-- Tzeentch Psyker Path-->
+
+  <Psyker.PsykerPathDef>
+    <defName>BEWH_TzeentchPsyker</defName>
+    <label>tzeentch psyker</label>
+    <description>Chaos psykers possess unhinged psychic prowess. Followers of Tzeentch have an aptitude for</description>
+    <background>UI/Backgrounds/TzeentchPsykerPath</background>
+    <altBackground>UI/AlternativeBackgrounds/PathBG_TzeentchPsyker</altBackground>
+    <tab>Psyker Disciplines</tab>
+    <tooltip>Powerful Tzeentch psyker psycasts</tooltip>
+    <lockedReason>Missing Mark</lockedReason>
+    <requiredGeneAny>
+      <li>BEWH_Psyker</li>
+      <li>BEWH_IotaPsyker</li>
+      <li>BEWH_DeltaPsyker</li>
+      <li>BEWH_BetaPsyker</li>
+    </requiredGeneAny>
+    <requiredGeneAll>
+      <li>BEWH_TzeentchMark</li>
+    </requiredGeneAll>
+  </Psyker.PsykerPathDef>
+
+  <!-- Nurgle Psyker Path-->
+
+  <Psyker.PsykerPathDef>
+    <defName>BEWH_NurglePsyker</defName>
+    <label>nurgle psyker</label>
+    <description>Chaos psykers possess unhinged psychic prowess. Followers of Nurgle have an aptitude for</description>
+    <background>UI/Backgrounds/NurglePsykerPath</background>
+    <altBackground>UI/AlternativeBackgrounds/PathBG_NurglePsyker</altBackground>
+    <tab>Psyker Disciplines</tab>
+    <tooltip>Powerful Nurgle psyker psycasts</tooltip>
+    <lockedReason>Missing Mark</lockedReason>
+    <requiredGeneAny>
+      <li>BEWH_Psyker</li>
+      <li>BEWH_IotaPsyker</li>
+      <li>BEWH_DeltaPsyker</li>
+      <li>BEWH_BetaPsyker</li>
+    </requiredGeneAny>
+    <requiredGeneAll>
+      <li>BEWH_NurgleMark</li>
+    </requiredGeneAll>
+  </Psyker.PsykerPathDef>
+
+  <!-- Slaanesh Psyker Path-->
+
+  <Psyker.PsykerPathDef>
+    <defName>BEWH_SlaaneshPsyker</defName>
+    <label>slaanesh psyker</label>
+    <description>Chaos psykers possess unhinged psychic prowess. Followers of Slaanesh have an aptitude for</description>
+    <background>UI/Backgrounds/SlaaneshPsykerPath</background>
+    <altBackground>UI/AlternativeBackgrounds/PathBG_SlaaneshPsyker</altBackground>
+    <tab>Psyker Disciplines</tab>
+    <tooltip>Powerful Slaanseh psyker psycasts</tooltip>
+    <lockedReason>Missing Mark</lockedReason>
+    <requiredGeneAny>
+      <li>BEWH_Psyker</li>
+      <li>BEWH_IotaPsyker</li>
+      <li>BEWH_DeltaPsyker</li>
+      <li>BEWH_BetaPsyker</li>
+    </requiredGeneAny>
+    <requiredGeneAll>
+      <li>BEWH_SlaaneshMark</li>
+    </requiredGeneAll>
+  </Psyker.PsykerPathDef>
+
+</Defs>

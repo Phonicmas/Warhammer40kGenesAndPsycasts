@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!-- ============= Ritual ============= -->
+
+    <WorkGiverDef>
+        <defName>BEWH_RitualWorkGiver</defName>
+        <label>perform ritual</label>
+        <giverClass>BEWH.RitualWorkGiver_DoBill</giverClass>
+        <workType>BEWH_RitualWorkType</workType>
+        <priorityInType>1</priorityInType>
+        <fixedBillGiverDefs>
+            <li>BEWH_UndividedRitualSpot</li>
+            <li>BEWH_KhorneRitualSpot</li>
+            <li>BEWH_TzeentchRitualSpot</li>
+            <li>BEWH_NurgleRitualSpot</li>
+            <li>BEWH_SlaaneshRitualSpot</li>
+            <li>BEWH_ImperiumSpot</li>
+        </fixedBillGiverDefs>
+        <verb>perform ritual</verb>
+        <gerund>performing ritual at</gerund>
+        <prioritizeSustains>true</prioritizeSustains>
+    </WorkGiverDef>
+
+</Defs>

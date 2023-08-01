@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!-- Name of Imperium Faction -->
+
+    <RulePackDef>
+        <defName>BEWH_FactionNameMaker</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name->The Imperium</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+
+    <!-- Name of settlements -->
+
+    <RulePackDef>
+        <defName>BEWH_SettlementNameMaker</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name->Outpost [Letters]</li>
+            </rulesStrings>
+            <rulesRaw>
+                <li Class="Rule_File">
+                    <keyword>Letters</keyword>
+                    <path>NameBanks/BEWH_SettlementNames</path>
+                </li>
+            </rulesRaw>
+        </rulePack>
+    </RulePackDef>
+
+    <!-- Name of Chaos Faction -->
+
+    <RulePackDef>
+        <defName>BEWH_FactionChaosNameMaker</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name->Chaos</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+
+</Defs>
+  

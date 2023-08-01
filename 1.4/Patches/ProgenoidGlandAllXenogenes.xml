@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="VFECore.PatchOperationToggableSequence">
+        <enabled>false</enabled>
+        <mods>
+            <li>Warhammer 40k - Genes and Psycasts</li>
+        </mods>
+        <label>Progenoid Glands copy all xenogenes too:</label>
+        <operations>
+            <li Class="PatchOperationRemove">
+                <xpath>Defs/RecipeDef[defName = "BEWH_AstartesPack"]/workerClass</xpath>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/RecipeDef[defName = "BEWH_AstartesPack"]</xpath>
+                <value>
+                    <workerClass>BEWH.GeneProgenoidRemovalAllGenesWorkerClass</workerClass>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+</Patch>
