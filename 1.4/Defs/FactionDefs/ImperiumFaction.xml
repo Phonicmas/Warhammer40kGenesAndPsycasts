@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <FactionDef ParentName="FactionBase">
+        <defName>BEWH_ImperiumFaction</defName>
+        <label>Imperium</label>
+        <description>A company of the emperors finest warriors, the Adeptus Astartes, charged with
+            purging heresy from this backwater rimworld.</description>
+        <pawnSingular>Space marine</pawnSingular>
+        <pawnsPlural>Space marines</pawnsPlural>
+        <fixedLeaderKinds>
+            <li>BEWH_LordCommander</li>
+        </fixedLeaderKinds>
+        <settlementGenerationWeight>0.2</settlementGenerationWeight>
+        <requiredCountAtGameStart>1</requiredCountAtGameStart>
+        <maxCountAtGameStart>1</maxCountAtGameStart>
+        <allowedArrivalTemperatureRange>-100~200</allowedArrivalTemperatureRange>
+        <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+        <configurationListOrderPriority>90</configurationListOrderPriority>
+        <canSiege>false</canSiege>
+        <canStageAttacks>true</canStageAttacks>
+        <permanentEnemy>false</permanentEnemy>
+        <leaderTitle>Lord Commander</leaderTitle>
+        <techLevel>Ultra</techLevel>
+        <rescueesCanJoin>false</rescueesCanJoin>
+        <factionNameMaker>BEWH_FactionNameMaker</factionNameMaker>
+        <settlementNameMaker>BEWH_SettlementNameMaker</settlementNameMaker>
+        <royalFavorLabel>respect</royalFavorLabel>
+        <royalFavorIconPath>UI/Icons/RoyalFavor</royalFavorIconPath>
+        <royalTitleInheritanceWorkerClass>RoyalTitleInheritanceWorker</royalTitleInheritanceWorkerClass>
+        <royalTitleInheritanceRelations>
+            <li>Child</li>
+            <li>Grandchild</li>
+            <li>GreatGrandchild</li>
+            <li>NephewOrNiece</li>
+            <li>Spouse</li>
+            <li>Sibling</li>
+            <li>HalfSibling</li>
+            <li>Cousin</li>
+            <li>Parent</li>
+            <li>UncleOrAunt</li>
+        </royalTitleInheritanceRelations>
+        <royalTitleTags>
+            <li>ImperiumTitle</li>
+        </royalTitleTags>
+        <factionIconPath>World/WorldObjects/Imperium/ImperiumIcon</factionIconPath>
+        <settlementTexturePath>World/WorldObjects/Imperium/ImperiumIcon</settlementTexturePath>
+        <xenotypeSet Inherit="False">
+            <xenotypeChances>
+                <BEWH_SpaceMarine>0.80</BEWH_SpaceMarine>
+                <BEWH_PrimarisSpaceMarine>0.10</BEWH_PrimarisSpaceMarine>
+                <BEWH_SpaceMarinePsyker>0.10</BEWH_SpaceMarinePsyker>
+            </xenotypeChances>
+            <warnIfTotalAbove1>true</warnIfTotalAbove1>
+        </xenotypeSet>
+        <allowedCultures>
+            <li>BEWH_ImperiumCulture</li>
+        </allowedCultures>
+        <requiredMemes>
+            <li MayRequire="Ludeon.RimWorld.Ideology">BEWH_Imperial</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">HumanPrimacy</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Proselytizer</li>
+        </requiredMemes>
+        <backstoryFilters>
+            <li>
+                <categoriesAdulthood>
+                    <li>ImperialFighter</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFilters>
+        <earliestRaidDays>180</earliestRaidDays>
+        <autoFlee>false</autoFlee>
+        <maxPawnCostPerTotalPointsCurve>
+            <points>
+                <li>(0,35)</li>
+                <li>(70, 50)</li>
+                <li>(700, 100)</li>
+                <li>(1300, 150)</li>
+                <li>(100000, 10000)</li>
+            </points>
+        </maxPawnCostPerTotalPointsCurve>
+        <pawnGroupMakers>
+            <li>
+                <!-- Normal fights -->
+                <kindDef>Combat</kindDef>
+                <commonality>100</commonality>
+                <options>
+                    <BEWH_SpaceMarine>10</BEWH_SpaceMarine>
+                    <BEWH_SpaceMarinePsyker>2</BEWH_SpaceMarinePsyker>
+                </options>
+            </li>
+            <li>
+                <!-- Primaris fights -->
+                <kindDef>Combat</kindDef>
+                <commonality>5</commonality>
+                <options>
+                    <BEWH_PrimarisSpaceMarine>10</BEWH_PrimarisSpaceMarine>
+                    <BEWH_SpaceMarinePsyker>2</BEWH_SpaceMarinePsyker>
+                </options>
+            </li>
+            <li>
+                <!-- Base defense, mainly ranged with melee mix-ins -->
+                <kindDef>Settlement</kindDef>
+                <options>
+                    <BEWH_SpaceMarine>14</BEWH_SpaceMarine>
+                    <BEWH_SpaceMarinePsyker>4</BEWH_SpaceMarinePsyker>
+                    <BEWH_PrimarisSpaceMarine>4</BEWH_PrimarisSpaceMarine>
+                </options>
+            </li>
+            <li>
+                <kindDef>Trader</kindDef>
+                <traders>
+                    <BEWH_ImperiumTrader>1</BEWH_ImperiumTrader>
+                </traders>
+                <carriers>
+                    <Muffalo>10</Muffalo>
+                </carriers>
+                <guards>
+                    <BEWH_SpaceMarine>12</BEWH_SpaceMarine>
+                    <BEWH_PrimarisSpaceMarine>2</BEWH_PrimarisSpaceMarine>
+                    <BEWH_SpaceMarinePsyker>2</BEWH_SpaceMarinePsyker>
+                </guards>
+            </li>
+            <li>
+                <kindDef>Peaceful</kindDef>
+                <options>
+                    <BEWH_SpaceMarine>10</BEWH_SpaceMarine>
+                    <BEWH_SpaceMarinePsyker>2</BEWH_SpaceMarinePsyker>
+                </options>
+            </li>
+        </pawnGroupMakers>
+        <!-- Traders -->
+        <visitorTraderKinds>
+            <li>BEWH_ImperiumTraderCaravan</li>
+        </visitorTraderKinds>
+        <baseTraderKinds>
+            <li>BEWH_ImperiumTraderBase</li>
+        </baseTraderKinds>
+        <disallowedRaidAgeRestrictions>
+            <li MayRequire="Ludeon.RimWorld.Biotech">Children</li>
+        </disallowedRaidAgeRestrictions>
+    </FactionDef>
+
+</Defs>

@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!-- Space Marine Base -->
+
+    <PawnKindDef Name="SpaceMarineBasePawn" Abstract="True">
+        <race>Human</race>
+        <defaultFactionType>BEWH_ImperiumFaction</defaultFactionType>
+        <initialWillRange>300~400</initialWillRange>
+        <initialResistanceRange>300~400</initialResistanceRange>
+        <acceptArrestChanceFactor>0</acceptArrestChanceFactor>
+        <invNutrition>2.55</invNutrition>
+        <backstoryCryptosleepCommonality>1.0</backstoryCryptosleepCommonality>
+        <fixedGender>Male</fixedGender>
+        <minGenerationAge>19</minGenerationAge>
+        <maxGenerationAge>21</maxGenerationAge>
+        <itemQuality>Good</itemQuality>
+        <ignoreIdeoApparelColors>true</ignoreIdeoApparelColors>
+        <requiredWorkTags>Violent</requiredWorkTags>
+        <allowOldAgeInjuries>false</allowOldAgeInjuries>
+        <backstoryFiltersOverride>
+            <li>
+                <categories>
+                    <li>ImperialFighter</li>
+                </categories>
+            </li>
+        </backstoryFiltersOverride>
+        <useFactionXenotypes>false</useFactionXenotypes>
+        <gearHealthRange>
+            <min>1</min>
+            <max>1</max>
+        </gearHealthRange>
+        <weaponMoney>10000~10000</weaponMoney>
+        <apparelMoney>
+            <min>2000</min>
+            <max>9000</max>
+        </apparelMoney>
+        <apparelTags>
+            <li>IndustrialBasic</li>
+            <li>IndustrialAdvanced</li>
+            <li>IndustrialMilitaryBasic</li>
+            <li>IndustrialMilitaryAdvanced</li>
+        </apparelTags>
+        <apparelDisallowTags>
+            <li>Western</li>
+        </apparelDisallowTags>
+        <apparelColor>(250,250,250)</apparelColor>
+        <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+        <specificApparelRequirements Inherit="False">
+            <li>
+                <bodyPartGroup>Torso</bodyPartGroup>
+                <apparelLayer>OnSkin</apparelLayer>
+                <stuff>Synthread</stuff>
+            </li>
+            <li>
+                <bodyPartGroup>Legs</bodyPartGroup>
+                <apparelLayer>OnSkin</apparelLayer>
+                <stuff>Synthread</stuff>
+            </li>
+        </specificApparelRequirements>
+        <inventoryOptions>
+            <subOptionsChooseOne>
+                <li>
+                    <thingDef>MealSurvivalPack</thingDef>
+                    <countRange>
+                        <min>4</min>
+                        <max>5</max>
+                    </countRange>
+                </li>
+                <li>
+                    <thingDef>MedicineUltratech</thingDef>
+                    <countRange>
+                        <min>2</min>
+                        <max>5</max>
+                    </countRange>
+                </li>
+            </subOptionsChooseOne>
+        </inventoryOptions>
+        <techHediffsRequired>
+            <li>DeathAcidifier</li>
+        </techHediffsRequired>
+    </PawnKindDef>
+
+    <!-- Space Marine -->
+
+    <PawnKindDef ParentName="SpaceMarineBasePawn">
+        <defName>BEWH_SpaceMarine</defName>
+        <label>Tactical Marine</label>
+        <combatPower>200</combatPower>
+        <weaponTags>
+            <li>SpacerGun</li>
+            <li>UltratechMelee</li>
+        </weaponTags>
+        <apparelRequired>
+            <li>Apparel_PowerArmor</li>
+            <li>Apparel_PowerArmorHelmet</li>
+        </apparelRequired>
+        <disallowedTraits>
+            <li>Brawler</li>
+        </disallowedTraits>
+        <skills>
+            <li>
+                <skill>Shooting</skill>
+                <range>9~14</range>
+            </li>
+            <li>
+                <skill>Melee</skill>
+                <range>9~14</range>
+            </li>
+        </skills>
+        <xenotypeSet>
+            <xenotypeChances>
+                <BEWH_SpaceMarine>1</BEWH_SpaceMarine>
+            </xenotypeChances>
+        </xenotypeSet>
+    </PawnKindDef>
+
+    <!-- Primaris Space Marine -->
+
+    <PawnKindDef ParentName="SpaceMarineBasePawn">
+        <defName>BEWH_PrimarisSpaceMarine</defName>
+        <label>Tactical Primaris Marine</label>
+        <combatPower>300</combatPower>
+        <weaponTags>
+            <li>SpacerGun</li>
+            <li>UltratechMelee</li>
+        </weaponTags>
+        <apparelRequired>
+            <li>Apparel_ArmorCataphract</li>
+            <li>Apparel_ArmorHelmetCataphract</li>
+        </apparelRequired>
+        <disallowedTraits>
+            <li>Brawler</li>
+        </disallowedTraits>
+        <skills>
+            <li>
+                <skill>Shooting</skill>
+                <range>14~17</range>
+            </li>
+            <li>
+                <skill>Melee</skill>
+                <range>14~17</range>
+            </li>
+        </skills>
+        <xenotypeSet>
+            <xenotypeChances>
+                <BEWH_PrimarisSpaceMarine>1</BEWH_PrimarisSpaceMarine>
+            </xenotypeChances>
+        </xenotypeSet>
+    </PawnKindDef>
+
+    <!-- Space Marine Psyker -->
+
+    <PawnKindDef ParentName="SpaceMarineBasePawn">
+        <defName>BEWH_SpaceMarinePsyker</defName>
+        <label>Librarian</label>
+        <combatPower>280</combatPower>
+        <weaponTags>
+            <li>SpacerGun</li>
+            <li>UltratechMelee</li>
+        </weaponTags>
+        <apparelRequired>
+            <li>Apparel_ArmorMarinePrestige</li>
+            <li>Apparel_ArmorMarineHelmetPrestige</li>
+        </apparelRequired>
+        <disallowedTraits>
+            <li>Brawler</li>
+        </disallowedTraits>
+        <skills>
+            <li>
+                <skill>Shooting</skill>
+                <range>7~12</range>
+            </li>
+            <li>
+                <skill>Melee</skill>
+                <range>7~12</range>
+            </li>
+        </skills>
+        <xenotypeSet>
+            <xenotypeChances>
+                <BEWH_SpaceMarinePsyker>1</BEWH_SpaceMarinePsyker>
+            </xenotypeChances>
+        </xenotypeSet>
+    </PawnKindDef>
+
+    <!-- Custodes -->
+
+    <PawnKindDef ParentName="SpaceMarineBasePawn">
+        <defName>BEWH_Custodes</defName>
+        <label>custodes</label>
+        <combatPower>1500</combatPower>
+        <weaponTags>
+            <li>SpacerGun</li>
+            <li>UltratechMelee</li>
+        </weaponTags>
+        <apparelRequired>
+            <li>Apparel_ArmorCataphractPrestige</li>
+            <li>Apparel_ArmorHelmetCataphractPrestige</li>
+        </apparelRequired>
+        <disallowedTraits>
+            <li>Brawler</li>
+        </disallowedTraits>
+        <skills>
+            <li>
+                <skill>Shooting</skill>
+                <range>16~19</range>
+            </li>
+            <li>
+                <skill>Melee</skill>
+                <range>16~19</range>
+            </li>
+        </skills>
+        <xenotypeSet>
+            <xenotypeChances>
+                <BEWH_Custodes>1</BEWH_Custodes>
+            </xenotypeChances>
+        </xenotypeSet>
+    </PawnKindDef>
+
+    <!-- Lord Commander - Primarch -->
+
+    <PawnKindDef ParentName="SpaceMarineBasePawn">
+        <defName>BEWH_LordCommander</defName>
+        <label>primarch</label>
+        <combatPower>2000</combatPower>
+        <factionLeader>true</factionLeader>
+        <weaponTags>
+            <li>SpacerGun</li>
+            <li>UltratechMelee</li>
+        </weaponTags>
+        <apparelRequired>
+            <li>Apparel_ArmorCataphractPrestige</li>
+            <li>Apparel_ArmorHelmetCataphractPrestige</li>
+        </apparelRequired>
+        <disallowedTraits>
+            <li>Brawler</li>
+        </disallowedTraits>
+        <skills>
+            <li>
+                <skill>Shooting</skill>
+                <range>20~20</range>
+            </li>
+            <li>
+                <skill>Melee</skill>
+                <range>20~20</range>
+            </li>
+        </skills>
+        <xenotypeSet>
+            <xenotypeChances>
+                <BEWH_Primarch>1</BEWH_Primarch>
+            </xenotypeChances>
+        </xenotypeSet>
+    </PawnKindDef>
+
+</Defs>

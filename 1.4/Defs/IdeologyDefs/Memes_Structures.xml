@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <MemeDef>
+    <defName>BEWH_Imperial</defName>
+    <label>Imperium of Mankind</label>
+    <description>The Emperor of Mankind, often referred to by His faithful as the "God-Emperor" or simply "the Emperor", is the immortal Perpetual and psyker who serves as the reigning monarch of the Imperium of Man, and is described by the Imperial Ecclesiarchy and the Imperial Cult as the Father, Guardian and God of Humanity.</description>
+    <category>Structure</category>
+    <iconPath>World/WorldObjects/Imperium/ImperiumIcon</iconPath>
+    <impact>0</impact>
+    <deityNameMakerOverride>NamerDeityImperium</deityNameMakerOverride>
+    <deityTypeMakerOverride>DeityTypeMakerImperium</deityTypeMakerOverride>
+    <worshipRoomLabel>Chapter Hall</worshipRoomLabel>
+    <deityCount>1</deityCount>
+    <generalRules>
+      <rulesStrings>
+        <li>memeAdjective->faithful</li>
+        <li>memeLeaderNoun->captain</li>
+        <li>memeMoralist->chaplain</li>
+      </rulesStrings>
+    </generalRules>
+    <descriptionMaker>
+      <patterns>
+        <li>
+          <def>TheistMyth</def>
+        </li>
+        <li>
+          <def>TheistFounder</def>
+        </li>
+      </patterns>
+      <constants>
+        <li>
+          <key>structure_theist</key>
+          <value>true</value>
+        </li>
+        <li>
+          <key>BEWH_Imperial</key>
+          <value>true</value>
+        </li>
+      </constants>
+    </descriptionMaker>
+    <symbolPacks>
+      <li>
+        <ideoName>Imperial</ideoName>
+        <theme>faith</theme>
+        <adjective>imperialistic</adjective>
+        <member>imperial</member>
+      </li>
+    </symbolPacks>
+  </MemeDef>
+
+  <IdeoIconDef>
+    <defName>ImperiumIcon</defName>
+    <iconPath>World/WorldObjects/Imperium/ImperiumIcon</iconPath>
+    <memes>
+      <li>BEWH_Imperial</li>
+    </memes>
+  </IdeoIconDef>
+
+  <IdeoColorDef>
+    <defName>White</defName>
+    <colorDef>White</colorDef>
+    <memes>
+      <li>BEWH_Imperial</li>
+    </memes>
+  </IdeoColorDef>
+
+  <ColorDef ParentName="IdeoColorBase">
+    <defName>White</defName>
+    <color>(255, 255, 255)</color>
+  </ColorDef>
+
+</Defs>

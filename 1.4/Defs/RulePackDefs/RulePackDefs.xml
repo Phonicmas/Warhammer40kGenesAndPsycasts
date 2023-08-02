@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Imperium Namer Defs-->
+
+  <RulePackDef>
+    <defName>NamerIdeoImperium</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_ideoName->Imperium of Man</li>
+        <li>r_ideoAdjective->Imperial</li>
+        <li>r_memberName->Imperial</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>NamerDeityImperium</defName>
+    <include>
+      <li>NamerDeityGlobal</li>
+      <li>GodContent_Imperium</li>
+    </include>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>GodContent_Imperium</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>name->[start] [middle] [end]</li>
+
+        <li>start->Emperor</li>
+        <li>start->God Emperor</li>
+
+        <li>middle->of</li>
+
+        <li>end->Mankind</li>
+        <li>end->the Imperium</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>DeityTypeMakerImperium</defName>
+    <include>
+      <li>GlobalUtility</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>r_deityType->Emperor of the Imperium</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>LeaderTitleMakerImperium</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_leaderTitle->Captain</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>NamerRitualFestivalImperium</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_ritualName->Celebration of the Emperor</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <!--<RulePackDef>
+    <defName>BEWH_NamerRoleChaplain</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_roleName->Chaplain</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>-->
+
+</Defs>

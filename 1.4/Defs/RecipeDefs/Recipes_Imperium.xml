@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!-- Recipe Base -->
+
+    <RecipeDef Name="AscendRecipeBase" Abstract="True">
+        <jobString>Communing with God Emperor</jobString>
+        <workerClass>BEWH.RitualRecipeWorkerClass</workerClass>
+        <workAmount>500</workAmount>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <effectWorking>Cremate</effectWorking>
+        <soundWorking>Recipe_Cremate</soundWorking>
+    </RecipeDef>
+
+    <!-- Custodes -->
+
+    <RecipeDef ParentName="AscendRecipeBase">
+        <defName>BEWH_CustodesAscend</defName>
+        <label>Ascend to Custodes</label>
+        <description>Become a mighty Custodes and protect the Emperor</description>
+        <uiIconThing>BEWH_ImperiumSpot</uiIconThing>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Gold</li>
+                    </thingDefs>
+                </filter>
+                <count>500</count>
+            </li>
+        </ingredients>
+        <skillRequirements>
+            <Melee>13</Melee>
+            <Shooting>13</Shooting>
+            <Intellectual>13</Intellectual>
+            <Social>13</Social>
+        </skillRequirements>
+    </RecipeDef>
+
+    <!-- Primarch -->
+
+    <RecipeDef ParentName="AscendRecipeBase">
+        <defName>BEWH_PrimarchAscend</defName>
+        <label>Ascend to Primarch</label>
+        <description>Become a mighty Primarch and wage war on chaos</description>
+        <uiIconThing>BEWH_ImperiumSpot</uiIconThing>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Gold</li>
+                    </thingDefs>
+                </filter>
+                <count>1000</count>
+            </li>
+        </ingredients>
+        <skillRequirements>
+            <Melee>16</Melee>
+            <Shooting>16</Shooting>
+            <Intellectual>16</Intellectual>
+            <Social>16</Social>
+        </skillRequirements>
+    </RecipeDef>
+
+</Defs>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <FactionDef ParentName="FactionBase">
+        <defName>BEWH_ChaosFactionHidden</defName>
+        <label>Chaos</label>
+        <description>Chaos</description>
+        <pawnSingular>Chaos</pawnSingular>
+        <pawnsPlural>Chaos</pawnsPlural>
+        <requiredCountAtGameStart>1</requiredCountAtGameStart>
+        <maxCountAtGameStart>1</maxCountAtGameStart>
+        <allowedArrivalTemperatureRange>-100~200</allowedArrivalTemperatureRange>
+        <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+        <configurationListOrderPriority>90</configurationListOrderPriority>
+        <canSiege>false</canSiege>
+        <hidden>true</hidden>
+        <canStageAttacks>true</canStageAttacks>
+        <permanentEnemy>true</permanentEnemy>
+        <leaderTitle>Chaos Lord</leaderTitle>
+        <techLevel>Ultra</techLevel>
+        <rescueesCanJoin>false</rescueesCanJoin>
+        <factionNameMaker>BEWH_FactionChaosNameMaker</factionNameMaker>
+        <factionIconPath>World/WorldObjects/Chaos/ChaosIcon</factionIconPath>
+        <settlementTexturePath>World/WorldObjects/Chaos/ChaosIcon</settlementTexturePath>
+        <xenotypeSet Inherit="False">
+            <xenotypeChances>
+                <BEWH_ChaosMarine>0.39</BEWH_ChaosMarine>
+                <BEWH_KhorneMarine>0.075</BEWH_KhorneMarine>
+                <BEWH_SlaaneshMarine>0.075</BEWH_SlaaneshMarine>
+                <BEWH_NurgleMarine>0.075</BEWH_NurgleMarine>
+                <BEWH_TzeentchMarine>0.075</BEWH_TzeentchMarine>
+                <BEWH_DPUndivided>0.002</BEWH_DPUndivided>
+                <BEWH_DPKhorne>0.002</BEWH_DPKhorne>
+                <BEWH_DPNurgle>0.002</BEWH_DPNurgle>
+                <BEWH_DPTzeentch>0.002</BEWH_DPTzeentch>
+                <BEWH_DPSlaanesh>0.002</BEWH_DPSlaanesh>
+            </xenotypeChances>
+            <warnIfTotalAbove1>true</warnIfTotalAbove1>
+        </xenotypeSet>
+        <backstoryFilters>
+            <li>
+                <categoriesAdulthood>
+                    <li>ImperialFighter</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFilters>
+        <earliestRaidDays>180</earliestRaidDays>
+        <autoFlee>false</autoFlee>
+        <maxPawnCostPerTotalPointsCurve>
+            <points>
+                <li>(0,35)</li>
+                <li>(70, 50)</li>
+                <li>(700, 100)</li>
+                <li>(1300, 150)</li>
+                <li>(100000, 10000)</li>
+            </points>
+        </maxPawnCostPerTotalPointsCurve>
+        <pawnGroupMakers>
+            <!-- Undivided Fight -->
+            <li>
+                <kindDef>Combat</kindDef>
+                <commonality>100</commonality>
+                <options>
+                    <BEWH_ChaosMarineUndivided>100</BEWH_ChaosMarineUndivided>
+                    <BEWH_ChaosMarineUndividedPsyker>10</BEWH_ChaosMarineUndividedPsyker>
+                    <BEWH_DPUndivided>1</BEWH_DPUndivided>
+                </options>
+            </li>
+            <!-- Khorne Fight -->
+            <li>
+                <kindDef>Combat</kindDef>
+                <commonality>100</commonality>
+                <options>
+                    <BEWH_ChaosMarineKhorne>100</BEWH_ChaosMarineKhorne>
+                    <BEWH_DPKhorne>1</BEWH_DPKhorne>
+                </options>
+            </li>
+            <!-- Nurgle Fight -->
+            <li>
+                <kindDef>Combat</kindDef>
+                <commonality>100</commonality>
+                <options>
+                    <BEWH_ChaosMarineNurgle>100</BEWH_ChaosMarineNurgle>
+                    <BEWH_ChaosMarineNurglePsyker>10</BEWH_ChaosMarineNurglePsyker>
+                    <BEWH_DPNurgle>1</BEWH_DPNurgle>
+                </options>
+            </li>
+            <!-- Slaanesh Fight -->
+            <li>
+                <kindDef>Combat</kindDef>
+                <commonality>100</commonality>
+                <options>
+                    <BEWH_ChaosMarineSlaanesh>100</BEWH_ChaosMarineSlaanesh>
+                    <BEWH_ChaosMarineSlaaneshPsyker>10</BEWH_ChaosMarineSlaaneshPsyker>
+                    <BEWH_DPSlaanesh>1</BEWH_DPSlaanesh>
+                </options>
+            </li>
+            <!-- Tzeentch Fight -->
+            <li>
+                <kindDef>Combat</kindDef>
+                <commonality>100</commonality>
+                <options>
+                    <BEWH_ChaosMarineTzeentch>100</BEWH_ChaosMarineTzeentch>
+                    <BEWH_ChaosMarineTzeentchPsyker>50</BEWH_ChaosMarineTzeentchPsyker>
+                    <BEWH_DPTzeentch>1</BEWH_DPTzeentch>
+                </options>
+            </li>
+            <!-- Cultist Fight -->
+            <li>
+                <kindDef>Combat</kindDef>
+                <commonality>1000</commonality>
+                <options>
+                    <BEWH_ChaosCultistUndivided>1</BEWH_ChaosCultistUndivided>
+                    <BEWH_ChaosCultistKhorne>1</BEWH_ChaosCultistKhorne>
+                    <BEWH_ChaosCultistNurgle>1</BEWH_ChaosCultistNurgle>
+                    <BEWH_ChaosCultistSlaanesh>1</BEWH_ChaosCultistSlaanesh>
+                    <BEWH_ChaosCultistTzeentch>1</BEWH_ChaosCultistTzeentch>
+                </options>
+            </li>
+        </pawnGroupMakers>
+    </FactionDef>
+
+</Defs>

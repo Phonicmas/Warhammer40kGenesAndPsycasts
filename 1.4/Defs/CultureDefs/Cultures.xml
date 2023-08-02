@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Imperium Culture -->
+
+  <CultureDef>
+    <defName>BEWH_ImperiumCulture</defName>
+    <label>Space Marine Culture</label>
+    <description>The Emperors finest warriors, the Adeptus Astartes.</description>
+    <iconPath>World/WorldObjects/Imperium/ImperiumIcon</iconPath>
+    <!--<pawnNameMaker>NamerPersonSpaceMarine</pawnNameMaker>-->
+    <ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerIdeoImperium</ideoNameMaker>
+    <deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerDeityImperium</deityNameMaker>
+    <deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">DeityTypeMakerImperium</deityTypeMaker>
+    <leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">LeaderTitleMakerImperium</leaderTitleMaker>
+    <festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerRitualFestivalImperium</festivalNameMaker>
+    <preferredWeaponClasses>
+      <noble>Ultratech</noble>
+      <despised>Neolithic</despised>
+    </preferredWeaponClasses>
+    <allowedPlaceTags>
+      <li>OriginTechnoFeudal</li>
+    </allowedPlaceTags>
+    <styleItemTags>
+      <li>
+        <tag>Shaved</tag>
+        <baseWeight>1</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+      <li>
+        <tag>Rookie</tag>
+        <baseWeight>1</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+      <li>
+        <tag>Topdog</tag>
+        <baseWeight>1</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+      <li>
+        <tag>Recruit</tag>
+        <baseWeight>1</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+      <li>
+        <tag>NoTattoo</tag>
+        <baseWeight>1</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+    </styleItemTags>
+  </CultureDef>
+  
+</Defs>

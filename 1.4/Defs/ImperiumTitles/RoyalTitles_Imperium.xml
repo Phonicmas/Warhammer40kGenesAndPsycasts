@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!-- ============== Imperium titles - Player gettable non-psycaster
+    ============================= -->
+
+    <RoyalTitleDef Abstract="True" Name="BaseImperiumTitle">
+        <tags>
+            <li>ImperiumTitle</li>
+        </tags>
+        <awardThought>GainedTitle</awardThought>
+        <lostThought>LostTitle</lostThought>
+    </RoyalTitleDef>
+
+    <RoyalTitleDef ParentName="BaseImperiumTitle">
+        <defName>BEWH_Title1</defName>
+        <label>Associate</label>
+        <description>The title of associate is used by the Imperium to signify a
+            fully-respected individual. The title is offered to outsiders who act with honor in
+            the eyes of the Imperium.</description>
+        <seniority>0</seniority>
+        <favorCost>1</favorCost>
+        <changeHeirQuestPoints>1000</changeHeirQuestPoints>
+        <allowDignifiedMeditationFocus>False</allowDignifiedMeditationFocus>
+        <awardWorkerClass>RoyalTitleAwardWorker_Instant</awardWorkerClass>
+        <permitPointsAwarded>1</permitPointsAwarded>
+    </RoyalTitleDef>
+
+    <RoyalTitleDef ParentName="BaseImperiumTitle">
+        <defName>BEWH_Title2</defName>
+        <label>BEWH_Title2</label>
+        <description>...</description>
+        <seniority>100</seniority>
+        <favorCost>6</favorCost>
+        <changeHeirQuestPoints>1000</changeHeirQuestPoints>
+        <commonality>1</commonality>
+        <permitPointsAwarded>1</permitPointsAwarded>
+    </RoyalTitleDef>
+
+    <RoyalTitleDef ParentName="BaseImperiumTitle">
+        <defName>BEWH_Title3</defName>
+        <label>BEWH_Title3</label>
+        <description>...</description>
+        <seniority>200</seniority>
+        <favorCost>6</favorCost>
+        <minExpectation>Moderate</minExpectation>
+        <changeHeirQuestPoints>1200</changeHeirQuestPoints>
+        <recruitmentResistanceOffset>10</recruitmentResistanceOffset>
+        <commonality>1</commonality>
+        <canBeInherited>True</canBeInherited>
+        <permitPointsAwarded>1</permitPointsAwarded>
+    </RoyalTitleDef>
+
+    <RoyalTitleDef ParentName="BaseImperiumTitle">
+        <defName>BEWH_Title4</defName>
+        <label>BEWH_Title4</label>
+        <description>...</description>
+        <seniority>300</seniority>
+        <favorCost>8</favorCost>
+        <minExpectation>High</minExpectation>
+        <changeHeirQuestPoints>1600</changeHeirQuestPoints>
+        <recruitmentResistanceOffset>25</recruitmentResistanceOffset>
+        <commonality>1</commonality>
+        <canBeInherited>True</canBeInherited>
+        <decreeMtbDays>-1</decreeMtbDays> <!-- disabled -->
+        <decreeMentalBreakCommonality>2</decreeMentalBreakCommonality>
+        <permitPointsAwarded>1</permitPointsAwarded>
+        <decreeTags>
+            <li>All</li>
+        </decreeTags>
+        <permits>
+            <li>TradeSettlement</li>
+            <li>TradeCaravan</li>
+        </permits>
+    </RoyalTitleDef>
+
+    <RoyalTitleDef ParentName="BaseImperiumTitle">
+        <defName>BEWH_Title5</defName>
+        <label>BEWH_Title5</label>
+        <description>...</description>
+        <seniority>400</seniority>
+        <favorCost>10</favorCost>
+        <minExpectation>SkyHigh</minExpectation>
+        <requiredMinimumApparelQuality>Normal</requiredMinimumApparelQuality>
+        <changeHeirQuestPoints>2200</changeHeirQuestPoints>
+        <recruitmentResistanceOffset>40</recruitmentResistanceOffset>
+        <commonality>1</commonality>
+        <canBeInherited>True</canBeInherited>
+        <decreeMtbDays>-1</decreeMtbDays> <!-- disabled -->
+        <decreeMentalBreakCommonality>4</decreeMentalBreakCommonality>
+        <permitPointsAwarded>1</permitPointsAwarded>
+        <decreeTags>
+            <li>All</li>
+        </decreeTags>
+        <permits>
+            <li>TradeSettlement</li>
+            <li>TradeCaravan</li>
+        </permits>
+        <grantedAbilities>
+            <li>Speech</li>
+        </grantedAbilities>
+        <speechCooldown>1200000</speechCooldown>
+    </RoyalTitleDef>
+
+    <RoyalTitleDef ParentName="BaseImperiumTitle">
+        <defName>BEWH_Title6</defName>
+        <label>Honourable Space Marine</label>
+        <description>The title of honourable space marine is given to those the Imperium deem
+            worthy, through technology from the rim, it is possibly for the Imperium to grant the
+            space marine gene seeds to an individual holding such title.</description>
+        <seniority>500</seniority>
+        <favorCost>14</favorCost>
+        <minExpectation>Noble</minExpectation>
+        <requiredMinimumApparelQuality>Normal</requiredMinimumApparelQuality>
+        <changeHeirQuestPoints>2800</changeHeirQuestPoints>
+        <recruitmentResistanceOffset>60</recruitmentResistanceOffset>
+        <commonality>1</commonality>
+        <canBeInherited>False</canBeInherited>
+        <suppressIdleAlert>true</suppressIdleAlert>
+        <decreeMtbDays>-1</decreeMtbDays> <!-- disabled -->
+        <decreeMentalBreakCommonality>8</decreeMentalBreakCommonality>
+        <permitPointsAwarded>2</permitPointsAwarded>
+        <decreeTags>
+            <li>All</li>
+        </decreeTags>
+        <permits>
+            <li>TradeSettlement</li>
+            <li>TradeCaravan</li>
+            <li>TradeOrbital</li>
+        </permits>
+        <grantedAbilities>
+            <li>Speech</li>
+        </grantedAbilities>
+        <speechCooldown>900000</speechCooldown>
+        <awardWorkerClass>BEWH.RoyalTitleAwardWorker_SpaceMarine</awardWorkerClass>
+    </RoyalTitleDef>
+
+    <RoyalTitleDef ParentName="BaseImperiumTitle">
+        <defName>BEWH_Title7</defName>
+        <label>Honourable Primaris Marine</label>
+        <description>The title of honourable primaris marine is given to those the Imperium deem
+            exceptional, through technology from the rim, it is possibly for the Imperium to grant the
+            primaris marine gene seeds to an individual holding such title.</description>
+        <seniority>600</seniority>
+        <favorCost>20</favorCost>
+        <minExpectation>Noble</minExpectation>
+        <requiredMinimumApparelQuality>Normal</requiredMinimumApparelQuality>
+        <changeHeirQuestPoints>3500</changeHeirQuestPoints>
+        <recruitmentResistanceOffset>75</recruitmentResistanceOffset>
+        <commonality>1</commonality>
+        <canBeInherited>False</canBeInherited>
+        <suppressIdleAlert>true</suppressIdleAlert>
+        <decreeMtbDays>-1</decreeMtbDays> <!-- disabled -->
+        <decreeMentalBreakCommonality>12</decreeMentalBreakCommonality>
+        <permitPointsAwarded>2</permitPointsAwarded>
+        <decreeTags>
+            <li>All</li>
+        </decreeTags>
+        <permits>
+            <li>TradeSettlement</li>
+            <li>TradeCaravan</li>
+            <li>TradeOrbital</li>
+        </permits>
+        <grantedAbilities>
+            <li>Speech</li>
+        </grantedAbilities>
+        <speechCooldown>600000</speechCooldown>
+        <awardWorkerClass>BEWH.RoyalTitleAwardWorker_PrimarisMarine</awardWorkerClass>
+    </RoyalTitleDef>
+
+    <!-- ============== Empire titles - NPC only psycaster ============================= -->
+
+
+    <RoyalTitleDef Abstract="True" Name="BaseImperiumTitleNPC" ParentName="BaseImperiumTitle">
+        <minExpectation>Royal</minExpectation>
+        <requiredMinimumApparelQuality>Normal</requiredMinimumApparelQuality>
+        <suppressIdleAlert>true</suppressIdleAlert>
+        <permits>
+            <li>TradeSettlement</li>
+            <li>TradeCaravan</li>
+            <li>TradeOrbital</li>
+        </permits>
+        <grantedAbilities>
+            <li>Speech</li>
+        </grantedAbilities>
+        <speechCooldown>600000</speechCooldown>
+        <maxPsylinkLevel>6</maxPsylinkLevel>
+    </RoyalTitleDef>
+
+    <RoyalTitleDef ParentName="BaseImperiumTitleNPC">
+        <defName>BEWH_NPCTitle1</defName>
+        <label>Lord General</label>
+        <labelFemale>duchess</labelFemale>
+        <description>...</description>
+        <seniority>700</seniority>
+        <commonality>1</commonality>
+        <recruitmentResistanceOffset>125</recruitmentResistanceOffset>
+    </RoyalTitleDef>
+
+    <RoyalTitleDef ParentName="BaseImperiumTitleNPC">
+        <defName>BEWH_NPCTitle2</defName>
+        <label>Warmaster</label>
+        <description>...</description>
+        <seniority>800</seniority>
+        <commonality>0.6</commonality>
+        <recruitmentResistanceOffset>150</recruitmentResistanceOffset>
+    </RoyalTitleDef>
+
+    <RoyalTitleDef ParentName="BaseImperiumTitleNPC">
+        <defName>BEWH_NPCTitle3</defName>
+        <label>Lord Commander</label>
+        <description>...</description>
+        <seniority>900</seniority>
+        <commonality>0.1</commonality>
+        <recruitmentResistanceOffset>200</recruitmentResistanceOffset>
+        <replaceOnRecruited>Consul</replaceOnRecruited>
+    </RoyalTitleDef>
+
+    <!-- Emperor should never appear in the game in any way, it's just here for completeness on UI
+    lists etc. -->
+    <RoyalTitleDef ParentName="BaseImperiumTitleNPC">
+        <defName>BEWH_NPCTitle4</defName>
+        <label>Emperor</label>
+        <description>...</description>
+        <seniority>1000</seniority>
+        <commonality>0</commonality>
+    </RoyalTitleDef>
+
+</Defs>

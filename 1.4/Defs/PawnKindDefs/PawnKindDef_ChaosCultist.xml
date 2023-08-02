@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!-- Cultist Base -->
+
+    <PawnKindDef Name="ChaosCultistBasePawn" Abstract="True">
+        <race>Human</race>
+        <defaultFactionType>BEWH_ChaosFactionHidden</defaultFactionType>
+        <initialWillRange>5~50</initialWillRange>
+        <initialResistanceRange>5~50</initialResistanceRange>
+        <invNutrition>2.55</invNutrition>
+        <backstoryCryptosleepCommonality>1.0</backstoryCryptosleepCommonality>
+        <minGenerationAge>19</minGenerationAge>
+        <maxGenerationAge>21</maxGenerationAge>
+        <itemQuality>Normal</itemQuality>
+        <ignoreIdeoApparelColors>true</ignoreIdeoApparelColors>
+        <requiredWorkTags>Violent</requiredWorkTags>
+        <backstoryFiltersOverride>
+            <li>
+                <categories>
+                    <li>ImperialFighter</li>
+                </categories>
+            </li>
+        </backstoryFiltersOverride>
+        <useFactionXenotypes>false</useFactionXenotypes>
+        <gearHealthRange>
+            <min>0.6</min>
+            <max>1</max>
+        </gearHealthRange>
+        <weaponMoney>200~1000</weaponMoney>
+        <apparelMoney>
+            <min>200</min>
+            <max>1000</max>
+        </apparelMoney>
+        <apparelTags>
+            <li>IndustrialBasic</li>
+            <li>IndustrialAdvanced</li>
+            <li>IndustrialMilitaryBasic</li>
+            <li>IndustrialMilitaryAdvanced</li>
+        </apparelTags>
+        <apparelDisallowTags>
+            <li>Western</li>
+        </apparelDisallowTags>
+        <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+        <disallowedTraits>
+            <li>Brawler</li>
+        </disallowedTraits>
+        <specificApparelRequirements Inherit="False">
+            <li>
+                <bodyPartGroup>Torso</bodyPartGroup>
+                <apparelLayer>OnSkin</apparelLayer>
+                <stuff>Cloth</stuff>
+            </li>
+            <li>
+                <bodyPartGroup>Legs</bodyPartGroup>
+                <apparelLayer>OnSkin</apparelLayer>
+                <stuff>Cloth</stuff>
+            </li>
+        </specificApparelRequirements>
+        <inventoryOptions>
+            <subOptionsChooseOne>
+                <li>
+                    <thingDef>MealSurvivalPack</thingDef>
+                    <countRange>
+                        <min>2</min>
+                        <max>3</max>
+                    </countRange>
+                </li>
+                <li>
+                    <thingDef>MedicineIndustrial</thingDef>
+                    <countRange>
+                        <min>1</min>
+                        <max>2</max>
+                    </countRange>
+                </li>
+            </subOptionsChooseOne>
+        </inventoryOptions>
+        <skills>
+            <li>
+                <skill>Shooting</skill>
+                <range>3~10</range>
+            </li>
+            <li>
+                <skill>Melee</skill>
+                <range>3~10</range>
+            </li>
+        </skills>
+        <combatPower>200</combatPower>
+    </PawnKindDef>
+
+    <!-- Undivided -->
+
+    <PawnKindDef ParentName="ChaosCultistBasePawn">
+        <defName>BEWH_ChaosCultistUndivided</defName>
+        <label>Chaos Cultist</label>
+        <apparelColor>(20,20,20)</apparelColor>
+        <weaponTags>
+            <li>IndustrialGunAdvanced</li>
+            <li>MedievalMeleeAdvanced</li>
+        </weaponTags>
+        <apparelRequired>
+            <li>Apparel_Pants</li>
+            <li>Apparel_BasicShirt</li>
+            <li>Apparel_Duster</li>
+        </apparelRequired>
+        <xenotypeSet>
+            <xenotypeChances>
+                <BEWH_ChaosMarine>1</BEWH_ChaosMarine>
+            </xenotypeChances>
+        </xenotypeSet>
+    </PawnKindDef>
+
+    <!-- Khorne -->
+
+    <PawnKindDef ParentName="ChaosCultistBasePawn">
+        <defName>BEWH_ChaosCultistKhorne</defName>
+        <label>Khorne Cultist</label>
+        <apparelColor>(110,0,0)</apparelColor>
+        <weaponTags>
+            <li>IndustrialGunAdvanced</li>
+            <li>MedievalMeleeAdvanced</li>
+        </weaponTags>
+        <apparelRequired>
+            <li>Apparel_Pants</li>
+            <li>Apparel_BasicShirt</li>
+            <li>Apparel_Duster</li>
+        </apparelRequired>
+        <xenotypeSet>
+            <xenotypeChances>
+                <BEWH_KhorneMarine>1</BEWH_KhorneMarine>
+            </xenotypeChances>
+        </xenotypeSet>
+    </PawnKindDef>
+
+    <!-- Nurgle -->
+
+    <PawnKindDef ParentName="ChaosCultistBasePawn">
+        <defName>BEWH_ChaosCultistNurgle</defName>
+        <label>Nurgle Cultist</label>
+        <apparelColor>(65,75,0)</apparelColor>
+        <weaponTags>
+            <li>IndustrialGunAdvanced</li>
+            <li>MedievalMeleeAdvanced</li>
+        </weaponTags>
+        <apparelRequired>
+            <li>Apparel_Pants</li>
+            <li>Apparel_BasicShirt</li>
+            <li>Apparel_Duster</li>
+        </apparelRequired>
+        <xenotypeSet>
+            <xenotypeChances>
+                <BEWH_NurgleMarine>1</BEWH_NurgleMarine>
+            </xenotypeChances>
+        </xenotypeSet>
+    </PawnKindDef>
+
+    <!-- Slaanesh -->
+
+    <PawnKindDef ParentName="ChaosCultistBasePawn">
+        <defName>BEWH_ChaosCultistSlaanesh</defName>
+        <label>Slaanesh Cultist</label>
+        <apparelColor>(170,0,75)</apparelColor>
+        <weaponTags>
+            <li>IndustrialGunAdvanced</li>
+            <li>MedievalMeleeAdvanced</li>
+        </weaponTags>
+        <apparelRequired>
+            <li>Apparel_Pants</li>
+            <li>Apparel_BasicShirt</li>
+            <li>Apparel_Duster</li>
+        </apparelRequired>
+        <xenotypeSet>
+            <xenotypeChances>
+                <BEWH_SlaaneshMarine>1</BEWH_SlaaneshMarine>
+            </xenotypeChances>
+        </xenotypeSet>
+    </PawnKindDef>
+
+    <!-- Tzeentch -->
+
+    <PawnKindDef ParentName="ChaosCultistBasePawn">
+        <defName>BEWH_ChaosCultistTzeentch</defName>
+        <label>Tzeentch Cultist</label>
+        <apparelColor>(0,60,155)</apparelColor>
+        <weaponTags>
+            <li>IndustrialGunAdvanced</li>
+            <li>MedievalMeleeAdvanced</li>
+        </weaponTags>
+        <apparelRequired>
+            <li>Apparel_Pants</li>
+            <li>Apparel_BasicShirt</li>
+            <li>Apparel_Duster</li>
+        </apparelRequired>
+        <xenotypeSet>
+            <xenotypeChances>
+                <BEWH_TzeentchMarine>1</BEWH_TzeentchMarine>
+            </xenotypeChances>
+        </xenotypeSet>
+    </PawnKindDef>
+
+</Defs>
