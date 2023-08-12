@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-    <!-- ============================= Permits from royal titles ============================= -->
+    <!-- Permits from royal titles -->
 
     <RoyalTitlePermitDef>
         <defName>TradeSettlement</defName>
@@ -19,7 +19,7 @@
     </RoyalTitlePermitDef>
 
 
-    <!-- ============================= Faction permits ============================= -->
+    <!-- Faction permits -->
 
     <!-- Econ -->
 
@@ -251,7 +251,7 @@
 
     <!-- Utility -->
     <RoyalTitlePermitDef>
-        <defName>CallTransportShuttle</defName>
+        <defName>BEWH_CallTransportShuttle</defName>
         <label>call transport shuttle</label>
         <description>Call a shuttle for your own use. It will transport colonists, items, and
             animals anywhere you like within 70 world tiles.</description>

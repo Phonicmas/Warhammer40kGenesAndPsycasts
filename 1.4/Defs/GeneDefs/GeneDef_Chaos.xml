@@ -317,7 +317,7 @@
         <minAgeActive>18</minAgeActive>
         <biologicalAgeTickFactorFromAgeCurve>
             <points>
-                <li>(20, 0)</li>
+                <li>(21, 0)</li>
             </points>
         </biologicalAgeTickFactorFromAgeCurve>
         <biostatCpx>5</biostatCpx>

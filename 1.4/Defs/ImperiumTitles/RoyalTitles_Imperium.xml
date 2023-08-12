@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-    <!-- ============== Imperium titles - Player gettable non-psycaster
-    ============================= -->
+    <!-- Imperium titles - Player gettable non-psycaster -->
 
     <RoyalTitleDef Abstract="True" Name="BaseImperiumTitle">
         <tags>
@@ -28,19 +27,29 @@
 
     <RoyalTitleDef ParentName="BaseImperiumTitle">
         <defName>BEWH_Title2</defName>
-        <label>BEWH_Title2</label>
-        <description>...</description>
+        <label>Honorary Citizen</label>
+        <description>The title of honorary citizen is used by the Imperium to signify a
+            fully-respected individual with trading right within the Imperium. The title is offered
+            to outsiders who act with honor in
+            the eyes of the Imperium.</description>
         <seniority>100</seniority>
         <favorCost>6</favorCost>
         <changeHeirQuestPoints>1000</changeHeirQuestPoints>
         <commonality>1</commonality>
         <permitPointsAwarded>1</permitPointsAwarded>
+        <permits>
+            <li>TradeSettlement</li>
+            <li>TradeCaravan</li>
+        </permits>
     </RoyalTitleDef>
 
     <RoyalTitleDef ParentName="BaseImperiumTitle">
         <defName>BEWH_Title3</defName>
-        <label>BEWH_Title3</label>
-        <description>...</description>
+        <label>Honorary Captain</label>
+        <description>The title of honorary captain is used by the Imperium to signify an individual
+            whose military and economic prowess has been noticed and subsequently wanted by the
+            Imperium. The
+            title is offered to outsiders who act with honor in the eyes of the Imperium.</description>
         <seniority>200</seniority>
         <favorCost>6</favorCost>
         <minExpectation>Moderate</minExpectation>
@@ -49,12 +58,19 @@
         <commonality>1</commonality>
         <canBeInherited>True</canBeInherited>
         <permitPointsAwarded>1</permitPointsAwarded>
+        <permits>
+            <li>TradeSettlement</li>
+            <li>TradeCaravan</li>
+        </permits>
     </RoyalTitleDef>
 
     <RoyalTitleDef ParentName="BaseImperiumTitle">
         <defName>BEWH_Title4</defName>
-        <label>BEWH_Title4</label>
-        <description>...</description>
+        <label>Honorary Major</label>
+        <description>The title of honorary major is used by the Imperium to signify an individual
+            whose military and economic prowess has useful to the Imperium and has warranted a
+            promotion. The
+            title is offered to outsiders who act with honor in the eyes of the Imperium.</description>
         <seniority>300</seniority>
         <favorCost>8</favorCost>
         <minExpectation>High</minExpectation>
@@ -76,8 +92,11 @@
 
     <RoyalTitleDef ParentName="BaseImperiumTitle">
         <defName>BEWH_Title5</defName>
-        <label>BEWH_Title5</label>
-        <description>...</description>
+        <label>Honorary General</label>
+        <description>The title of honorary major is used by the Imperium to signify an individual
+            whose military and economic prowess has proven important to the Imperium and has
+            warranted a promotion. The
+            title is offered to outsiders who act with honor in the eyes of the Imperium.</description>
         <seniority>400</seniority>
         <favorCost>10</favorCost>
         <minExpectation>SkyHigh</minExpectation>
@@ -104,7 +123,7 @@
 
     <RoyalTitleDef ParentName="BaseImperiumTitle">
         <defName>BEWH_Title6</defName>
-        <label>Honourable Space Marine</label>
+        <label>Honorary Space Marine</label>
         <description>The title of honourable space marine is given to those the Imperium deem
             worthy, through technology from the rim, it is possibly for the Imperium to grant the
             space marine gene seeds to an individual holding such title.</description>
@@ -113,7 +132,7 @@
         <minExpectation>Noble</minExpectation>
         <requiredMinimumApparelQuality>Normal</requiredMinimumApparelQuality>
         <changeHeirQuestPoints>2800</changeHeirQuestPoints>
-        <recruitmentResistanceOffset>60</recruitmentResistanceOffset>
+        <recruitmentResistanceOffset>250</recruitmentResistanceOffset>
         <commonality>1</commonality>
         <canBeInherited>False</canBeInherited>
         <suppressIdleAlert>true</suppressIdleAlert>
@@ -137,16 +156,17 @@
 
     <RoyalTitleDef ParentName="BaseImperiumTitle">
         <defName>BEWH_Title7</defName>
-        <label>Honourable Primaris Marine</label>
+        <label>Honorary Primaris Marine</label>
         <description>The title of honourable primaris marine is given to those the Imperium deem
-            exceptional, through technology from the rim, it is possibly for the Imperium to grant the
+            exceptional, through technology from the rim, it is possibly for the Imperium to grant
+            the
             primaris marine gene seeds to an individual holding such title.</description>
         <seniority>600</seniority>
         <favorCost>20</favorCost>
         <minExpectation>Noble</minExpectation>
         <requiredMinimumApparelQuality>Normal</requiredMinimumApparelQuality>
         <changeHeirQuestPoints>3500</changeHeirQuestPoints>
-        <recruitmentResistanceOffset>75</recruitmentResistanceOffset>
+        <recruitmentResistanceOffset>300</recruitmentResistanceOffset>
         <commonality>1</commonality>
         <canBeInherited>False</canBeInherited>
         <suppressIdleAlert>true</suppressIdleAlert>
@@ -168,7 +188,7 @@
         <awardWorkerClass>BEWH.RoyalTitleAwardWorker_PrimarisMarine</awardWorkerClass>
     </RoyalTitleDef>
 
-    <!-- ============== Empire titles - NPC only psycaster ============================= -->
+    <!-- Empire titles - NPC only psycaster -->
 
 
     <RoyalTitleDef Abstract="True" Name="BaseImperiumTitleNPC" ParentName="BaseImperiumTitle">
@@ -191,7 +211,8 @@
         <defName>BEWH_NPCTitle1</defName>
         <label>Lord General</label>
         <labelFemale>duchess</labelFemale>
-        <description>...</description>
+        <description>Lord General is the highest rank available inside the General Staff of the
+            Imperial Guard, and one with a multitude of official designations.</description>
         <seniority>700</seniority>
         <commonality>1</commonality>
         <recruitmentResistanceOffset>125</recruitmentResistanceOffset>
@@ -200,7 +221,9 @@
     <RoyalTitleDef ParentName="BaseImperiumTitleNPC">
         <defName>BEWH_NPCTitle2</defName>
         <label>Warmaster</label>
-        <description>...</description>
+        <description>Warmaster is a special military rank of the Imperium and the Imperial Guard.
+            Warmasters are created when a Crusade is being planned and resources from multiple
+            sectors are needed.</description>
         <seniority>800</seniority>
         <commonality>0.6</commonality>
         <recruitmentResistanceOffset>150</recruitmentResistanceOffset>
@@ -209,7 +232,9 @@
     <RoyalTitleDef ParentName="BaseImperiumTitleNPC">
         <defName>BEWH_NPCTitle3</defName>
         <label>Lord Commander</label>
-        <description>...</description>
+        <description>Occasionally referenced as Lord Militant Commander and also referred to as Lord
+            High Admiral, a Lord Commander of the Imperial Navy has jurisdiction over the
+            Imperial Navy in a Segmentum of the Imperium.</description>
         <seniority>900</seniority>
         <commonality>0.1</commonality>
         <recruitmentResistanceOffset>200</recruitmentResistanceOffset>
@@ -221,7 +246,7 @@
     <RoyalTitleDef ParentName="BaseImperiumTitleNPC">
         <defName>BEWH_NPCTitle4</defName>
         <label>Emperor</label>
-        <description>...</description>
+        <description>The God Emperor himself</description>
         <seniority>1000</seniority>
         <commonality>0</commonality>
     </RoyalTitleDef>
