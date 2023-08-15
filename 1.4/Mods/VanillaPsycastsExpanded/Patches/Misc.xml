@@ -12,7 +12,7 @@
                             <initialLevel>10</initialLevel>
                             <statUpgradePoints>2~6</statUpgradePoints>
                             <unlockedPaths>
-                                <BEWH_Psyker>1~5|3~9</BEWH_Psyker>
+                                <BEWH_Psyker>1~4|3~6</BEWH_Psyker>
                             </unlockedPaths>
                         </li>
                     </modExtensions>
@@ -28,7 +28,7 @@
                             <initialLevel>10</initialLevel>
                             <statUpgradePoints>2~6</statUpgradePoints>
                             <unlockedPaths>
-                                <BEWH_ChaosPsyker>1~5|3~9</BEWH_ChaosPsyker>
+                                <BEWH_ChaosPsyker>1~4|3~6</BEWH_ChaosPsyker>
                             </unlockedPaths>
                         </li>
                     </modExtensions>
@@ -42,10 +42,9 @@
                         <li Class="VanillaPsycastsExpanded.PawnKindAbilityExtension_Psycasts">
                             <implantDef>VPE_PsycastAbilityImplant</implantDef>
                             <initialLevel>10</initialLevel>
-                            <statUpgradePoints>2~6</statUpgradePoints>
+                            <statUpgradePoints>3~7</statUpgradePoints>
                             <unlockedPaths>
-                                <BEWH_ChaosPsyker>1~5|3~9</BEWH_ChaosPsyker>
-                                <!--<BEWH_NurglePsyker>1~5|3~9</BEWH_NurglePsyker>-->
+                                <BEWH_NurglePsyker>1~3|2~5</BEWH_NurglePsyker>
                             </unlockedPaths>
                         </li>
                     </modExtensions>
@@ -61,8 +60,7 @@
                             <initialLevel>10</initialLevel>
                             <statUpgradePoints>2~6</statUpgradePoints>
                             <unlockedPaths>
-                                <BEWH_ChaosPsyker>1~5|3~9</BEWH_ChaosPsyker>
-                                <!--<BEWH_SlaaneshPsyker>1~5|3~9</BEWH_SlaaneshPsyker>-->
+                                <BEWH_SlaaneshPsyker>1~3|2~6</BEWH_SlaaneshPsyker>
                             </unlockedPaths>
                         </li>
                     </modExtensions>
@@ -76,10 +74,9 @@
                         <li Class="VanillaPsycastsExpanded.PawnKindAbilityExtension_Psycasts">
                             <implantDef>VPE_PsycastAbilityImplant</implantDef>
                             <initialLevel>10</initialLevel>
-                            <statUpgradePoints>2~6</statUpgradePoints>
+                            <statUpgradePoints>4~8</statUpgradePoints>
                             <unlockedPaths>
-                                <BEWH_ChaosPsyker>1~5|3~9</BEWH_ChaosPsyker>
-                                <!--<BEWH_TzeentchPsyker>1~5|3~9</BEWH_TzeentchPsyker>-->
+                                <BEWH_TzeentchPsyker>1~3|2~4</BEWH_TzeentchPsyker>
                             </unlockedPaths>
                         </li>
                     </modExtensions>

@@ -23,8 +23,8 @@
     <modExtensions>
       <li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
         <path>BEWH_SlaaneshPsyker</path>
-        <level>2</level>
-        <order>3</order>
+        <level>1</level>
+        <order>1</order>
         <psyfocusCost>0.1</psyfocusCost>
         <entropyGain>26</entropyGain>
         <psychic>true</psychic>
@@ -54,8 +54,8 @@
     <modExtensions>
       <li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
         <path>BEWH_SlaaneshPsyker</path>
-        <level>4</level>
-        <order>1</order>
+        <level>3</level>
+        <order>2</order>
         <psyfocusCost>0.05</psyfocusCost>
         <entropyGain>57</entropyGain>
         <prerequisites>
@@ -126,11 +126,11 @@
       <li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
         <path>BEWH_SlaaneshPsyker</path>
         <level>5</level>
-        <order>3</order>
+        <order>1</order>
         <psyfocusCost>0.1</psyfocusCost>
         <entropyGain>93</entropyGain>
         <prerequisites>
-          <li>BEWH_SymphonyOfPain</li>
+          <li>BEWH_EcstaticOblivion</li>
         </prerequisites>
       </li>
       <li Class="VFECore.Abilities.AbilityExtension_Explosion">
@@ -162,8 +162,8 @@
     <modExtensions>
       <li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
         <path>BEWH_SlaaneshPsyker</path>
-        <level>3</level>
-        <order>3</order>
+        <level>2</level>
+        <order>1</order>
         <psyfocusCost>0.2</psyfocusCost>
         <entropyGain>194</entropyGain>
         <prerequisites>
@@ -193,11 +193,14 @@
     <modExtensions>
       <li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
         <path>BEWH_SlaaneshPsyker</path>
-        <level>3</level>
-        <order>1</order>
+        <level>2</level>
+        <order>3</order>
         <psyfocusCost>0.15</psyfocusCost>
         <entropyGain>25</entropyGain>
         <psychic>true</psychic>
+        <prerequisites>
+          <li>BEWH_Acquiescence_Slaanesh</li>
+        </prerequisites>
       </li>
       <li Class="VFECore.Abilities.AbilityExtension_Hediff">
         <hediff>BEWH_CeleritousSense</hediff>
@@ -210,7 +213,8 @@
   <VFECore.Abilities.AbilityDef ParentName="VPE_PsycastBase">
     <defName>BEWH_EcstaticOblivion</defName>
     <label>ecstatic oblivion</label>
-    <description>The psyker summons up every flickering moment of stay emotion from within the Immaterium, overwhelming his senses, making him unable to be stunned.</description>
+    <description>The psyker summons up every flickering moment of stay emotion from within the
+      Immaterium, overwhelming his senses, making him unable to be stunned.</description>
     <iconPath>Abilities/Slaanesh/EcstaticOblivionIcon</iconPath>
     <targetMode>Self</targetMode>
     <castTime>40</castTime>
@@ -221,13 +225,13 @@
     <modExtensions>
       <li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
         <path>BEWH_SlaaneshPsyker</path>
-        <level>5</level>
+        <level>3</level>
         <order>1</order>
         <psyfocusCost>0.08</psyfocusCost>
         <entropyGain>56</entropyGain>
         <psychic>true</psychic>
         <prerequisites>
-          <li>BEWH_CeleritousSense</li>
+          <li>BEWH_SymphonyOfPain</li>
         </prerequisites>
       </li>
       <li Class="VFECore.Abilities.AbilityExtension_Hediff">
@@ -236,29 +240,30 @@
     </modExtensions>
   </VFECore.Abilities.AbilityDef>
 
-  <!-- Summon Daemons of Slaanesh - self explanitory - have longer cooldown -->
+  <!-- Summon Daemons of Slaanesh -->
 
   <VFECore.Abilities.AbilityDef ParentName="VPE_PsycastBase">
     <defName>BEWH_SummonDaemonSlaanesh</defName>
     <label>summon daemon of Slaanesh</label>
-    <description>Coming soon!</description>
-    <iconPath>Abilities/NoTex</iconPath>
+    <description>Summons a daemonette to help you.</description>
+    <iconPath>Abilities/Slaanesh/SummonDaemonSlaanesh</iconPath>
     <targetMode>Location</targetMode>
-    <castTime>40</castTime>
+    <castTime>120</castTime>
+    <range>20.9</range>
     <durationTime>46000</durationTime>
-    <abilityClass>VFECore.Abilities.Ability_Blank</abilityClass>
-    <cooldownTime>600</cooldownTime>
+    <abilityClass>Psyker.Ability_SpawnDaemon</abilityClass>
+    <cooldownTime>6000</cooldownTime>
     <castSound>BEWH_NoSound</castSound>
     <modExtensions>
       <li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
         <path>BEWH_SlaaneshPsyker</path>
         <level>2</level>
         <order>2</order>
-        <psyfocusCost>0</psyfocusCost>
-        <entropyGain>0</entropyGain>
+        <psyfocusCost>0.1</psyfocusCost>
+        <entropyGain>100</entropyGain>
         <psychic>true</psychic>
         <prerequisites>
-          <li>BEWH_SummonGreaterDaemonSlaanesh</li>
+          <li>BEWH_Acquiescence_Slaanesh</li>
         </prerequisites>
       </li>
     </modExtensions>
@@ -268,7 +273,7 @@
 
   <VFECore.Abilities.AbilityDef ParentName="VPE_PsycastBase">
     <defName>BEWH_SummonGreaterDaemonSlaanesh</defName>
-    <label>summon greater daemon of Slaanesh</label>
+    <label>summon greater daemon of Slaanesh (Not implemented)</label>
     <description>Coming soon!</description>
     <iconPath>Abilities/NoTex</iconPath>
     <targetMode>Location</targetMode>
@@ -280,8 +285,8 @@
     <modExtensions>
       <li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
         <path>BEWH_SlaaneshPsyker</path>
-        <level>3</level>
-        <order>1</order>
+        <level>4</level>
+        <order>2</order>
         <psyfocusCost>0</psyfocusCost>
         <entropyGain>0</entropyGain>
         <psychic>true</psychic>

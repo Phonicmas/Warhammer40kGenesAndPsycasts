@@ -255,29 +255,30 @@
     </modExtensions>
   </VFECore.Abilities.AbilityDef>
 
-  <!-- Summon Daemons of Nurgle - self explanitory - have longer cooldown -->
+  <!-- Summon Daemons of Nurgle -->
 
   <VFECore.Abilities.AbilityDef ParentName="VPE_PsycastBase">
     <defName>BEWH_SummonDaemonNurgle</defName>
     <label>summon daemon of Nurgle</label>
-    <description>Coming soon!</description>
-    <iconPath>Abilities/NoTex</iconPath>
+    <description>Summons a plaguebearer to help you.</description>
+    <iconPath>Abilities/Nurgle/SummonDaemonNurgle</iconPath>
     <targetMode>Location</targetMode>
-    <castTime>40</castTime>
+    <castTime>120</castTime>
+    <range>20.9</range>
     <durationTime>46000</durationTime>
-    <abilityClass>VFECore.Abilities.Ability_Blank</abilityClass>
-    <cooldownTime>600</cooldownTime>
+    <abilityClass>Psyker.Ability_SpawnDaemon</abilityClass>
+    <cooldownTime>6000</cooldownTime>
     <castSound>BEWH_NoSound</castSound>
     <modExtensions>
       <li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
         <path>BEWH_NurglePsyker</path>
         <level>2</level>
         <order>2</order>
-        <psyfocusCost>0</psyfocusCost>
-        <entropyGain>0</entropyGain>
+        <psyfocusCost>0.1</psyfocusCost>
+        <entropyGain>100</entropyGain>
         <psychic>true</psychic>
         <prerequisites>
-          <li>BEWH_SummonGreaterDaemonNurgle</li>
+          <li>BEWH_InviolableFlesh_Nurgle</li>
         </prerequisites>
       </li>
     </modExtensions>
@@ -287,7 +288,7 @@
 
   <VFECore.Abilities.AbilityDef ParentName="VPE_PsycastBase">
     <defName>BEWH_SummonGreaterDaemonNurgle</defName>
-    <label>summon greater daemon of Nurgle</label>
+    <label>summon greater daemon of Nurgle (Not implemented)</label>
     <description>Coming soon!</description>
     <iconPath>Abilities/NoTex</iconPath>
     <targetMode>Location</targetMode>
@@ -299,7 +300,7 @@
     <modExtensions>
       <li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
         <path>BEWH_NurglePsyker</path>
-        <level>3</level>
+        <level>4</level>
         <order>2</order>
         <psyfocusCost>0</psyfocusCost>
         <entropyGain>0</entropyGain>

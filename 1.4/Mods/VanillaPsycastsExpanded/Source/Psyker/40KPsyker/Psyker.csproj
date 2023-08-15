@@ -68,6 +68,7 @@
     <Compile Include="HediffCompPropertiesGeneScramble.cs" />
     <Compile Include="HediffCompGeneScramble.cs" />
     <Compile Include="SymphonyPainDamageWorker.cs" />
+    <Compile Include="Ability_SpawnDaemon.cs" />
     <Compile Include="WarpFlameDamageWorker.cs" />
     <Compile Include="PsykerMod.cs" />
     <Compile Include="PsykerPathDef.cs" />

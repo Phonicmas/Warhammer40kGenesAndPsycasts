@@ -24,11 +24,14 @@
     <modExtensions>
       <li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
         <path>BEWH_TzeentchPsyker</path>
-        <level>3</level>
+        <level>2</level>
         <order>1</order>
         <psyfocusCost>0.09</psyfocusCost>
         <entropyGain>32</entropyGain>
         <psychic>true</psychic>
+        <prerequisites>
+          <li>BEWH_BoonOfTzeentch</li>
+        </prerequisites>
       </li>
       <li Class="VFECore.Abilities.AbilityExtension_Hediff">
         <hediff>BEWH_Minscourge</hediff>
@@ -144,11 +147,11 @@
       <li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
         <path>BEWH_TzeentchPsyker</path>
         <level>4</level>
-        <order>1</order>
+        <order>2</order>
         <psyfocusCost>0.09</psyfocusCost>
         <entropyGain>57</entropyGain>
         <prerequisites>
-          <li>BEWH_Mindscourge_Tzeentch</li>
+          <li>BEWH_WarpFlameWard</li>
         </prerequisites>
       </li>
       <li Class="VFECore.Abilities.AbilityExtension_Projectile">
@@ -227,7 +230,7 @@
     <modExtensions>
       <li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
         <path>BEWH_TzeentchPsyker</path>
-        <level>2</level>
+        <level>1</level>
         <order>1</order>
         <psyfocusCost>0.15</psyfocusCost>
         <entropyGain>0</entropyGain>
@@ -272,29 +275,30 @@
     </modExtensions>
   </VFECore.Abilities.AbilityDef>
 
-  <!-- Summon Daemons of Tzeentch - self explanitory - have longer cooldown -->
+  <!-- Summon Daemons of Tzeentch -->
 
   <VFECore.Abilities.AbilityDef ParentName="VPE_PsycastBase">
     <defName>BEWH_SummonDaemonTzeentch</defName>
     <label>summon daemon of Tzeentch</label>
-    <description>Coming soon!</description>
-    <iconPath>Abilities/NoTex</iconPath>
+    <description>Summons a pink horror to help you.</description>
+    <iconPath>Abilities/Tzeentch/SummonDaemonTzeentch</iconPath>
     <targetMode>Location</targetMode>
-    <castTime>40</castTime>
+    <castTime>120</castTime>
+    <range>20.9</range>
     <durationTime>46000</durationTime>
-    <abilityClass>VFECore.Abilities.Ability_Blank</abilityClass>
-    <cooldownTime>600</cooldownTime>
+    <abilityClass>Psyker.Ability_SpawnDaemon</abilityClass>
+    <cooldownTime>6000</cooldownTime>
     <castSound>BEWH_NoSound</castSound>
     <modExtensions>
       <li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
         <path>BEWH_TzeentchPsyker</path>
         <level>2</level>
         <order>2</order>
-        <psyfocusCost>0</psyfocusCost>
-        <entropyGain>0</entropyGain>
+        <psyfocusCost>0.1</psyfocusCost>
+        <entropyGain>100</entropyGain>
         <psychic>true</psychic>
         <prerequisites>
-          <li>BEWH_SummonGreaterDaemonTzeentch</li>
+          <li>BEWH_BoonOfTzeentch</li>
         </prerequisites>
       </li>
     </modExtensions>
@@ -304,7 +308,7 @@
 
   <VFECore.Abilities.AbilityDef ParentName="VPE_PsycastBase">
     <defName>BEWH_SummonGreaterDaemonTzeentch</defName>
-    <label>summon greater daemon of Tzeentch</label>
+    <label>summon greater daemon of Tzeentch (Not implemented)</label>
     <description>Coming soon!</description>
     <iconPath>Abilities/NoTex</iconPath>
     <targetMode>Location</targetMode>
@@ -316,7 +320,7 @@
     <modExtensions>
       <li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
         <path>BEWH_TzeentchPsyker</path>
-        <level>3</level>
+        <level>4</level>
         <order>3</order>
         <psyfocusCost>0</psyfocusCost>
         <entropyGain>0</entropyGain>
