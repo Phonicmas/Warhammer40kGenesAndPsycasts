@@ -1,10 +1,9 @@
-﻿using PsykerMod;
-using RimWorld;
+﻿using RimWorld;
 using System;
 using System.Collections.Generic;
 using Verse;
 
-namespace Psyker
+namespace BEWH
 {
     public class DamageWorker_WarpFlame : DamageWorker_AddInjury
     {
@@ -28,7 +27,7 @@ namespace Psyker
                 {
                     break;
                 }
-                dinfo2 = new DamageInfo(PsykerDefOf.BEWH_WarpFlame, PsykerDefOf.BEWH_WarpFlame.defaultDamage);
+                dinfo2 = new DamageInfo(BEWHDefOf.BEWH_WarpFlame, BEWHDefOf.BEWH_WarpFlame.defaultDamage);
                 damageResult2 = base.Apply(dinfo2, victim);
 
                 if (!damageResult2.deflected && !dinfo2.InstantPermanentInjury && Rand.Chance(FireUtility.ChanceToAttachFireFromEvent(victim)))

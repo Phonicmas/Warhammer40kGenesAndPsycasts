@@ -1,6 +1,5 @@
 ﻿using RimWorld;
 using System.Collections.Generic;
-using System.Linq;
 using Verse;
 using Verse.AI;
 
@@ -35,10 +34,10 @@ namespace BEWH
 
         public override Job JobOnThing(Pawn pawn, Thing thing, bool forced = false)
         {
-            bool markedPawn = IsMarked(pawn);
             //Check if pawn would have a job by vanilla standards
             if (base.JobOnThing(pawn, thing, forced) != null && thing is IBillGiver billGiver)
             {
+                bool markedPawn = IsMarked(pawn);
                 //Check is there is any recipe at all
                 BillStack billStack = billGiver.BillStack;
                 if (billStack.FirstShouldDoNow == null)
@@ -61,16 +60,15 @@ namespace BEWH
                     {
                         return null;
                     }
-                    return base.JobOnThing(pawn, thing, forced);
                 }
+                return base.JobOnThing(pawn, thing, forced);
             }
             return null;
         }
 
         public override bool HasJobOnThing(Pawn pawn, Thing t, bool forced = false)
         {
-            bool flag = base.HasJobOnThing(pawn, t, forced);
-            bool markedPawn = IsMarked(pawn);
+            bool hasJob = base.HasJobOnThing(pawn, t, forced);
             if (t is IBillGiver billGiver)
             {
                 BillStack billStack = billGiver.BillStack;
@@ -79,8 +77,9 @@ namespace BEWH
                     return false;
                 }
                 string recipeDefName = billStack.FirstShouldDoNow.recipe.defName;
-                if (recipeDefName != null && !flag)
+                if (recipeDefName != null && hasJob)
                 {
+                    bool markedPawn = IsMarked(pawn);
                     //This make sure the float menu is telling a pawn trying to become daemon prince, which may not, is told the reason why, being either that it is not marked or it is already a prince
                     if (DPrecipes.Contains(recipeDefName))
                     {
@@ -143,13 +142,14 @@ namespace BEWH
                         JobFailReason.Is("Is already ascended".Translate());
                         return false;
                     }
+                    return true;
                 }
                 else if (recipeDefName == null)
                 {
                     return false;
                 }
             }
-            return true;
+            return false;
         }
 
         private bool IsMarked(Pawn pawn)

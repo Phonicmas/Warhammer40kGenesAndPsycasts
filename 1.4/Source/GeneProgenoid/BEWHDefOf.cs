@@ -63,6 +63,8 @@ namespace BEWH
         public static XenotypeIconDef BEWH_Astartes;
         public static XenotypeIconDef BEWH_Primaris;
 
+        public static DamageDef BEWH_WarpFlame;
+
         static BEWHDefOf()
         {
             DefOfHelper.EnsureInitializedInCtor(typeof(BEWHDefOf));

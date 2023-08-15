@@ -54,31 +54,11 @@
         <makesAnimalsFlee>true</makesAnimalsFlee>
     </DamageDef>
 
-    <!-- Warp Flame -->
-
-    <DamageDef>
-        <defName>BEWH_WarpFlame</defName>
-        <workerClass>Psyker.DamageWorker_WarpFlame</workerClass>
-        <label>warp flame</label>
-        <hasForcefulImpact>false</hasForcefulImpact>
-        <makesBlood>false</makesBlood>
-        <canInterruptJobs>false</canInterruptJobs>
-        <externalViolence>true</externalViolence>
-        <deathMessage>{0} has warp-burned to death.</deathMessage>
-        <hediff>BEWH_WarpBurn</hediff>
-        <armorCategory>Heat</armorCategory>
-        <minDamageToFragment>25</minDamageToFragment>
-        <defaultDamage>6</defaultDamage>
-        <defaultArmorPenetration>0</defaultArmorPenetration>
-        <combatLogRules>Damage_Flame</combatLogRules>
-        <canUseDeflectMetalEffect>false</canUseDeflectMetalEffect>
-    </DamageDef>
-
     <!-- Firestorm -->
 
     <DamageDef>
         <defName>BEWH_Firestorm</defName>
-        <workerClass>Psyker.DamageWorker_WarpFlame</workerClass>
+        <workerClass>BEWH.DamageWorker_WarpFlame</workerClass>
         <label>firestorm flame</label>
         <hasForcefulImpact>true</hasForcefulImpact>
         <makesBlood>false</makesBlood>

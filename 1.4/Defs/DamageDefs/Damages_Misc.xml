@@ -43,4 +43,24 @@
         <overkillPctToDestroyPart>0.4~1.0</overkillPctToDestroyPart>
     </DamageDef>
 
+    <!-- Warp Flame -->
+
+    <DamageDef>
+        <defName>BEWH_WarpFlame</defName>
+        <workerClass>BEWH.DamageWorker_WarpFlame</workerClass>
+        <label>warp flame</label>
+        <hasForcefulImpact>false</hasForcefulImpact>
+        <makesBlood>false</makesBlood>
+        <canInterruptJobs>false</canInterruptJobs>
+        <externalViolence>true</externalViolence>
+        <deathMessage>{0} has warp-burned to death.</deathMessage>
+        <hediff>BEWH_WarpBurn</hediff>
+        <armorCategory>Heat</armorCategory>
+        <minDamageToFragment>25</minDamageToFragment>
+        <defaultDamage>6</defaultDamage>
+        <defaultArmorPenetration>0</defaultArmorPenetration>
+        <combatLogRules>Damage_Flame</combatLogRules>
+        <canUseDeflectMetalEffect>false</canUseDeflectMetalEffect>
+    </DamageDef>
+
 </Defs>

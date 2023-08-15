@@ -23,7 +23,7 @@ https://forms.gle/5YpXFs7UgMokhvYa7
 1. Psytrainer quest reward giving access to paths without psyker gene. (VPE thing, need to look into code and harmony fix it?)
 2. diseaseProgressionFactor might stop some diseases from healing (Such as nurgles rot)
 3. Psyker paths telling missing mark when present? (User mistake by not having psyker gene? IF so try make it such that it tells them instead of just missing mark OR tell either is missing)
-4. Issues with ascending apparenly. Also 1 time red error when something - see mewn goddess post. (Cant seem to reproduce either bugs)
+4. Issues with ascending apparenly.  (Cant seem to reproduce bug)
 
 ## Genes
 First 19 gene-seed have a complexity of 2, all 3 primaris have a complexity of 4 and requires 1 archite capsule.

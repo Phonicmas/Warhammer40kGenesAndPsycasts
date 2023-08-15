@@ -68,6 +68,16 @@
         </comps>
     </ThingDef>
 
+    <!-- Enables ranged attacks on animals -->
+    <MVCF.ModDef>
+        <defName>BEWH_Daemons</defName>
+        <label>Daemons</label>
+        <description>Adding animal ranged attacks for Daemons</description>
+        <ActivateFeatures>
+            <li>RangedAnimals</li>
+            <li>IntegratedToggle</li>
+        </ActivateFeatures>
+    </MVCF.ModDef>
 
     <!-- Tzeentch -->
     <ThingDef ParentName="BEWH_DaemonBase">
@@ -115,6 +125,20 @@
                 <soundMeleeMiss>Pawn_Melee_HumanBite_Miss</soundMeleeMiss>
             </li>
         </tools>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>BEWH_PinkHorrorProjectile</defaultProjectile>
+                <warmupTime>1.0</warmupTime>
+                <range>25.9</range>
+                <ticksBetweenBurstShots>20</ticksBetweenBurstShots>
+                <burstShotCount>2</burstShotCount>
+                <soundCast>Shot_ChargeRifle</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
     </ThingDef>
 
     <PawnKindDef ParentName="AnimalKindBase">

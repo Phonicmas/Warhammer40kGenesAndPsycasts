@@ -72,6 +72,7 @@
     <Compile Include="ProgenoidRemovalWorkerClass.cs" />
     <Compile Include="ThoughtWorkerOmegaPariah.cs" />
     <Compile Include="ThoughtWorkerSigmaPariah.cs" />
+    <Compile Include="WarpFlameDamageWorker.cs" />
     <Compile Include="ThoughtWorkerUpsilonPariah.cs" />
     <Compile Include="HediffCompPropertiesAura.cs" />
     <Compile Include="HediffCompAura.cs" />
