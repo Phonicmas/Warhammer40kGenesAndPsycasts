@@ -10,22 +10,20 @@ https://forms.gle/5YpXFs7UgMokhvYa7
 1. Make nurgles rot transform pawn into plaugebearer upon death.
 2. Make custom code to remove/prevent hediffs from getting applied, anything not warp caused.
 3. Make progenoid glands give an additional harvest of gene-seeds when a pawn dies.
-4. Make daemon sprites for all gods.
+4. Make greater daemon sprites for all gods.
 5. Give Khorne marked pawns special abilities that grows stronger the more they've killed.
 6. Give daemon respawn some effect
 7. Make psychic gene increase in power? By absorbing others or making sacrefices?
 8. Make more chaos genes, like tentacle of tzeentch or mouth of nurgle, make them work on the ritual system. Maybe a random chance to get a beneficial mutation or a bad one.
 
-
 ## Ideas
 
 
 ## Fixes to do
-1. Psytrainer quest reward giving access to paths without psyker gene.
-2. diseaseProgressionFactor might stop some diseases from healing
-
-## Comp Patches to do
-1. Crash landing - radition for melanochrome
+1. Psytrainer quest reward giving access to paths without psyker gene. (VPE thing, need to look into code and harmony fix it?)
+2. diseaseProgressionFactor might stop some diseases from healing (Such as nurgles rot)
+3. Psyker paths telling missing mark when present? (User mistake by not having psyker gene? IF so try make it such that it tells them instead of just missing mark OR tell either is missing)
+4. Issues with ascending apparenly. Also 1 time red error when something - see mewn goddess post. (Cant seem to reproduce either bugs)
 
 ## Genes
 First 19 gene-seed have a complexity of 2, all 3 primaris have a complexity of 4 and requires 1 archite capsule.
