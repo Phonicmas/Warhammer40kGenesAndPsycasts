@@ -248,7 +248,7 @@
         </comps>
     </HediffDef>
 
-    <!-- Storm -->  
+    <!-- Storm -->
 
     <HediffDef ParentName="BEWH_Mutate">
         <defName>BEWH_StormChange</defName>
@@ -284,7 +284,5 @@
             <destroyedOutLabel>Warp-burned out</destroyedOutLabel>
         </injuryProps>
     </HediffDef>
-
-    <!--<spawnThingOnRemoved>ThingDefHere</spawnThingOnRemoved>-->
 
 </Defs>

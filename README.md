@@ -13,11 +13,11 @@ https://forms.gle/5YpXFs7UgMokhvYa7
 4. Make greater daemon sprites for all gods.
 5. Give Khorne marked pawns special abilities that grows stronger the more they've killed.
 6. Give daemon respawn some effect
-7. Make psychic gene increase in power? By absorbing others or making sacrefices?
-8. Make more chaos genes, like tentacle of tzeentch or mouth of nurgle, make them work on the ritual system. Maybe a random chance to get a beneficial mutation or a bad one.
+7. Make more chaos genes, like tentacle of tzeentch or mouth of nurgle, make them work on the ritual system. Maybe a random chance to get a beneficial mutation or a bad one.
+8. Special effect for daemon ressurection and summoning.
 
 ## Ideas
-
+1. Pawns not marked by khorne go beserk when wielding hellblade?
 
 ## Fixes to do
 1. Psytrainer quest reward giving access to paths without psyker gene. (VPE thing, need to look into code and harmony fix it?)

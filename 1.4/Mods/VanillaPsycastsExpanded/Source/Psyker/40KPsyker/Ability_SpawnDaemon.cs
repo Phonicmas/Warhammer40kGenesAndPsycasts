@@ -1,5 +1,6 @@
 ﻿using PsykerMod;
 using RimWorld.Planet;
+using UnityEngine;
 using Verse;
 
 namespace Psyker
@@ -12,8 +13,7 @@ namespace Psyker
             foreach (GlobalTargetInfo globalTargetInfo in targets)
             {
                 IntVec3 position = globalTargetInfo.Cell;
-                PawnKindDef summon = null;
-
+                PawnKindDef summon;
 
                 if (def.defName == null)
                 {
@@ -36,7 +36,18 @@ namespace Psyker
                         return;
                 }
 
-                GenSpawn.Spawn(PawnGenerator.GeneratePawn(summon, pawn.Faction), position, pawn.Map);
+                int summonAmount = Mathf.FloorToInt(GetPowerForPawn());
+                if (summonAmount == 0)
+                {
+                    GenSpawn.Spawn(PawnGenerator.GeneratePawn(summon, pawn.Faction), position, pawn.Map);
+                }
+                else
+                {
+                    for (int i = 0; i < summonAmount; i++)
+                    {
+                        GenSpawn.Spawn(PawnGenerator.GeneratePawn(summon, pawn.Faction), position, pawn.Map);
+                    }
+                }
             }
         }
     }

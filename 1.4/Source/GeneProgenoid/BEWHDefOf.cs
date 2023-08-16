@@ -65,6 +65,9 @@ namespace BEWH
 
         public static DamageDef BEWH_WarpFlame;
 
+        public static PawnKindDef BEWH_SummonedBlueHorror;
+        public static PawnKindDef BEWH_SummonedBloodletter;
+
         static BEWHDefOf()
         {
             DefOfHelper.EnsureInitializedInCtor(typeof(BEWHDefOf));

@@ -39,6 +39,9 @@
             <MeleeHitChance>1.3</MeleeHitChance>
             <MeleeDamageFactor>1.2</MeleeDamageFactor>
         </statFactors>
+        <abilities>
+            <li>BEWH_KhorneSummon</li>
+        </abilities>
         <suppressedTraits>
             <li>
                 <def>PsychicSensitivity</def>

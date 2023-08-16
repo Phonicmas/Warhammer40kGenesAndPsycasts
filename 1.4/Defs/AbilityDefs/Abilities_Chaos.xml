@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
   <AbilityCategoryDef>
@@ -34,6 +34,41 @@
       <requireLineOfSight>true</requireLineOfSight>
       <soundCast>Longjump_Jump</soundCast>
       <soundLanding>Longjump_Land</soundLanding>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+        <canTargetPawns>false</canTargetPawns>
+        <canTargetBuildings>false</canTargetBuildings>
+      </targetParams>
+    </verbProperties>
+  </AbilityDef>
+
+  <!-- Khorne Daemonic Summoning -->
+
+  <AbilityGroupDef>
+    <defName>BEWH_KSummon</defName>
+    <cooldownTicks>20000</cooldownTicks>
+  </AbilityGroupDef>
+
+  <AbilityDef>
+    <defName>BEWH_KhorneSummon</defName>
+    <label>summon bloodletter</label>
+    <description>This pawn can summon bloodletters to help them in combat.</description>
+    <iconPath>Abilities/Khorne/SummonDaemonKhorne</iconPath>
+    <displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+    <groupDef>BEWH_KSummon</groupDef>
+    <category>Chaos</category>
+    <uiOrder>2</uiOrder>
+    <cooldownTicksRange>200</cooldownTicksRange>
+    <verbProperties>
+      <verbClass>BEWH.Verb_CastAbilityKhorneSummon</verbClass>
+      <label>summon bloodletter</label>
+      <violent>false</violent>
+      <forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+      <warmupTime>3</warmupTime>
+      <range>30.9</range>
+      <requireLineOfSight>true</requireLineOfSight>
+      <soundCast>BEWH_NoSound</soundCast>
       <targetParams>
         <canTargetLocations>true</canTargetLocations>
         <canTargetPawns>false</canTargetPawns>

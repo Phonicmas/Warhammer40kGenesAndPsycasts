@@ -57,6 +57,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MentalState_FriendlyDaemon.cs" />
+    <Compile Include="DeathActionWorker_Daemon.cs" />
+    <Compile Include="Verb_CastAbilityKhorneSummon.cs" />
+    <Compile Include="DeathActionWorker_PinkHorror.cs" />
     <Compile Include="HarmonyPatchMaxHealth.cs" />
     <Compile Include="HarmonyPatchMultiLung.cs" />
     <Compile Include="HarmonyPatchSecondaryHeart.cs" />

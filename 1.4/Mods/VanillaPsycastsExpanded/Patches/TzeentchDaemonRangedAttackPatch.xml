@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <!-- Pink horror ranged attack -->
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName = "BEWH_PinkHorror"]</xpath>
+                <value>
+                    <verbs>
+                        <li>
+                            <verbClass>Verb_Shoot</verbClass>
+                            <hasStandardCommand>true</hasStandardCommand>
+                            <defaultProjectile>BEWH_PinkHorrorProjectile</defaultProjectile>
+                            <warmupTime>1.0</warmupTime>
+                            <range>25.9</range>
+                            <ticksBetweenBurstShots>20</ticksBetweenBurstShots>
+                            <burstShotCount>2</burstShotCount>
+                            <soundCast>Shot_ChargeRifle</soundCast>
+                            <soundCastTail>GunTail_Medium</soundCastTail>
+                            <muzzleFlashScale>9</muzzleFlashScale>
+                        </li>
+                    </verbs>
+                </value>
+            </li>
+            <!-- Blue horror ranged attack -->
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName = "BEWH_BlueHorror"]</xpath>
+                <value>
+                    <verbs>
+                        <li>
+                            <verbClass>Verb_Shoot</verbClass>
+                            <hasStandardCommand>true</hasStandardCommand>
+                            <defaultProjectile>BEWH_BlueHorrorProjectile</defaultProjectile>
+                            <warmupTime>1.0</warmupTime>
+                            <range>18.9</range>
+                            <ticksBetweenBurstShots>20</ticksBetweenBurstShots>
+                            <burstShotCount>2</burstShotCount>
+                            <soundCast>Shot_ChargeRifle</soundCast>
+                            <soundCastTail>GunTail_Medium</soundCastTail>
+                            <muzzleFlashScale>9</muzzleFlashScale>
+                        </li>
+                    </verbs>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+</Patch>

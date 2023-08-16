@@ -249,11 +249,18 @@
     <iconPath>Abilities/Slaanesh/SummonDaemonSlaanesh</iconPath>
     <targetMode>Location</targetMode>
     <castTime>120</castTime>
-    <range>20.9</range>
-    <durationTime>46000</durationTime>
+    <range>30.9</range>
+    <durationTime>15000</durationTime>
     <abilityClass>Psyker.Ability_SpawnDaemon</abilityClass>
-    <cooldownTime>6000</cooldownTime>
+    <cooldownTime>20000</cooldownTime>
     <castSound>BEWH_NoSound</castSound>
+    <power>1</power>
+    <powerStatFactors>
+      <PsychicSensitivity>1</PsychicSensitivity>
+    </powerStatFactors>
+    <rangeStatFactors>
+      <PsychicSensitivity>0.5</PsychicSensitivity>
+    </rangeStatFactors>
     <modExtensions>
       <li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
         <path>BEWH_SlaaneshPsyker</path>

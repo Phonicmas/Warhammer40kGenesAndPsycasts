@@ -34,7 +34,7 @@
                     <li>Cut</li>
                 </capacities>
                 <power>52</power>
-                <cooldownTime>3</cooldownTime>
+                <cooldownTime>2.5</cooldownTime>
                 <armorPenetration>0.75</armorPenetration>
             </li>
             <li>
@@ -43,7 +43,7 @@
                     <li>Stab</li>
                 </capacities>
                 <power>52</power>
-                <cooldownTime>4</cooldownTime>
+                <cooldownTime>3</cooldownTime>
                 <armorPenetration>0.75</armorPenetration>
             </li>
         </tools>
@@ -72,8 +72,8 @@
                 <capacities>
                     <li>Cut</li>
                 </capacities>
-                <power>20</power>
-                <cooldownTime>1</cooldownTime>
+                <power>10</power>
+                <cooldownTime>0.6</cooldownTime>
                 <armorPenetration>0.8</armorPenetration>
             </li>
             <li>
@@ -81,8 +81,8 @@
                 <capacities>
                     <li>Stab</li>
                 </capacities>
-                <power>20</power>
-                <cooldownTime>1.5</cooldownTime>
+                <power>10</power>
+                <cooldownTime>1</cooldownTime>
                 <armorPenetration>0.8</armorPenetration>
             </li>
         </tools>
