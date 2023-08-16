@@ -16,7 +16,7 @@ namespace PsykerMod
         public static PawnKindDef BEWH_SummonedPlaguebearer;
         public static PawnKindDef BEWH_SummonedDaemonette;
 
-        public static FactionDef BEWH_ChaosFactionHidden;
+        public static PawnKindDef BEWH_Plaguebearer;
 
         static PsykerDefOf()
         {

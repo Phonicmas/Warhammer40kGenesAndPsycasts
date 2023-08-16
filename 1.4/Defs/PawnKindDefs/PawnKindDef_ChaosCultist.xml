@@ -105,7 +105,7 @@
         </apparelRequired>
         <xenotypeSet>
             <xenotypeChances>
-                <BEWH_ChaosMarine>1</BEWH_ChaosMarine>
+                <BEWH_ChaosCultist>1</BEWH_ChaosCultist>
             </xenotypeChances>
         </xenotypeSet>
     </PawnKindDef>
@@ -127,7 +127,7 @@
         </apparelRequired>
         <xenotypeSet>
             <xenotypeChances>
-                <BEWH_KhorneMarine>1</BEWH_KhorneMarine>
+                <BEWH_KhorneCultist>1</BEWH_KhorneCultist>
             </xenotypeChances>
         </xenotypeSet>
     </PawnKindDef>
@@ -149,7 +149,7 @@
         </apparelRequired>
         <xenotypeSet>
             <xenotypeChances>
-                <BEWH_NurgleMarine>1</BEWH_NurgleMarine>
+                <BEWH_NurgleCultist>1</BEWH_NurgleCultist>
             </xenotypeChances>
         </xenotypeSet>
     </PawnKindDef>
@@ -171,7 +171,7 @@
         </apparelRequired>
         <xenotypeSet>
             <xenotypeChances>
-                <BEWH_SlaaneshMarine>1</BEWH_SlaaneshMarine>
+                <BEWH_SlaaneshCultist>1</BEWH_SlaaneshCultist>
             </xenotypeChances>
         </xenotypeSet>
     </PawnKindDef>
@@ -193,7 +193,7 @@
         </apparelRequired>
         <xenotypeSet>
             <xenotypeChances>
-                <BEWH_TzeentchMarine>1</BEWH_TzeentchMarine>
+                <BEWH_TzeentchCultist>1</BEWH_TzeentchCultist>
             </xenotypeChances>
         </xenotypeSet>
     </PawnKindDef>

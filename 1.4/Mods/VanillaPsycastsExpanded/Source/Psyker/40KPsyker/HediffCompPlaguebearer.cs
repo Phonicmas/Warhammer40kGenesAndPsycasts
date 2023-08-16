@@ -18,17 +18,13 @@ namespace Psyker
 
         public static void CorpseTick(Corpse __instance)
         {
-            Pawn pawn = __instance.InnerPawn;
-            Hediff hediff = pawn.health.hediffSet.hediffs.Find((Hediff x) => x.def == PsykerDefOf.BEWH_NurglesRot && x.Visible);
-            if (hediff != null)
+            if (__instance.InnerPawn.health.hediffSet.hediffs.Find((Hediff x) => x.def == PsykerDefOf.BEWH_NurglesRot && x.Visible) != null)
             {
-                pawn.Strip();
-                Pawn pb = PawnGenerator.GeneratePawn(PsykerDefOf.BEWH_SummonedPlaguebearer);
+                __instance.InnerPawn.Strip();
+                Pawn pb = PawnGenerator.GeneratePawn(PsykerDefOf.BEWH_Plaguebearer);
                 GenSpawn.Spawn(pb, __instance.Position, __instance.Map);
-                Log.Message("" + pawn.Faction);
-                Log.Message("" + Faction.OfPlayer);
                 pb.HostileTo(Faction.OfPlayer);
-                __instance.Destroy();
+                __instance.DeSpawn();
             }
         }
     }

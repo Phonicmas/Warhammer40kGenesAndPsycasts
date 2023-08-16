@@ -9,33 +9,10 @@
         <operations>
             <!-- Primarch -->
             <li Class="PatchOperationRemove">
-                <xpath>Defs/GeneDef[defName = "BEWH_Primarch"]/statFactors</xpath>
+                <xpath>Defs/GeneDef[defName = "BEWH_Primarch"]/statFactors/Fertility</xpath>
             </li>
             <li Class="PatchOperationRemove">
                 <xpath>Defs/GeneDef[defName = "BEWH_Primarch"]/sterilize</xpath>
-            </li>
-            <li Class="PatchOperationAdd">
-                <xpath>Defs/GeneDef[defName = "BEWH_Primarch"]</xpath>
-                <value>
-                    <statFactors>
-                        <Mass>2</Mass>
-                        <LeatherAmount>2</LeatherAmount>
-                        <MeatAmount>2</MeatAmount>
-                        <InjuryHealingFactor>24</InjuryHealingFactor>
-                        <MoveSpeed>2.4</MoveSpeed>
-                        <RestFallRateFactor>0.05</RestFallRateFactor>
-                        <MeleeDamageFactor>10</MeleeDamageFactor>
-                        <AimingDelayFactor>0.35</AimingDelayFactor>
-                        <MeleeWeapon_CooldownMultiplier>0.35</MeleeWeapon_CooldownMultiplier>
-                        <RangedCooldownFactor>0.35</RangedCooldownFactor>
-                        <MeleeHitChance>2.5</MeleeHitChance>
-                        <StaggerDurationFactor>0</StaggerDurationFactor>
-                        <IncomingDamageFactor>0.3</IncomingDamageFactor>
-                        <RawNutritionFactor>4</RawNutritionFactor>
-                        <GlobalLearningFactor>3</GlobalLearningFactor>
-                        <ImmunityGainSpeed>12</ImmunityGainSpeed>
-                    </statFactors>
-                </value>
             </li>
         </operations>
     </Operation>

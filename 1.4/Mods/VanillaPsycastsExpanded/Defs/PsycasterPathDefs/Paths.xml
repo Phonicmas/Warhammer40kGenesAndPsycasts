@@ -11,7 +11,7 @@
     <altBackground>UI/AlternativeBackgrounds/PathBG_Psyker</altBackground>
     <tab>Psyker Disciplines</tab>
     <tooltip>Powerful sanctioned psyker psycasts</tooltip>
-    <lockedReason>Psykers only</lockedReason>
+    <lockedReason>Missing Psyker Gene</lockedReason>
     <requiredGeneAny>
       <li>BEWH_Psyker</li>
       <li>BEWH_IotaPsyker</li>
@@ -30,7 +30,7 @@
     <altBackground>UI/AlternativeBackgrounds/PathBG_ChaosPsyker</altBackground>
     <tab>Psyker Disciplines</tab>
     <tooltip>Powerful chaos psyker psycasts</tooltip>
-    <lockedReason>Psykers only</lockedReason>
+    <lockedReason>Missing Psyker Gene</lockedReason>
     <requiredGeneAny>
       <li>BEWH_Psyker</li>
       <li>BEWH_IotaPsyker</li>
@@ -49,7 +49,7 @@
     <altBackground>UI/AlternativeBackgrounds/PathBG_TzeentchPsyker</altBackground>
     <tab>Psyker Disciplines</tab>
     <tooltip>Powerful Tzeentch psyker psycasts</tooltip>
-    <lockedReason>Missing Mark</lockedReason>
+    <lockedReason>Missing Mark or Psyker Gene</lockedReason>
     <requiredGeneAny>
       <li>BEWH_Psyker</li>
       <li>BEWH_IotaPsyker</li>
@@ -71,7 +71,7 @@
     <altBackground>UI/AlternativeBackgrounds/PathBG_NurglePsyker</altBackground>
     <tab>Psyker Disciplines</tab>
     <tooltip>Powerful Nurgle psyker psycasts</tooltip>
-    <lockedReason>Missing Mark</lockedReason>
+    <lockedReason>Missing Mark or Psyker Gene</lockedReason>
     <requiredGeneAny>
       <li>BEWH_Psyker</li>
       <li>BEWH_IotaPsyker</li>
@@ -93,7 +93,7 @@
     <altBackground>UI/AlternativeBackgrounds/PathBG_SlaaneshPsyker</altBackground>
     <tab>Psyker Disciplines</tab>
     <tooltip>Powerful Slaanseh psyker psycasts</tooltip>
-    <lockedReason>Missing Mark</lockedReason>
+    <lockedReason>Missing Mark or Psyker Gene</lockedReason>
     <requiredGeneAny>
       <li>BEWH_Psyker</li>
       <li>BEWH_IotaPsyker</li>

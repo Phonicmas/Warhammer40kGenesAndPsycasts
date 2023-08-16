@@ -9,20 +9,10 @@
         <operations>
             <!-- Space Marine -->
             <li Class="PatchOperationRemove">
-                <xpath>Defs/GeneDef[defName = "BEWH_Ossmodula"]/statFactors</xpath>
+                <xpath>Defs/GeneDef[defName = "BEWH_Ossmodula"]/statFactors/Fertility</xpath>
             </li>
             <li Class="PatchOperationRemove">
                 <xpath>Defs/GeneDef[defName = "BEWH_Ossmodula"]/sterilize</xpath>
-            </li>
-            <li Class="PatchOperationAdd">
-                <xpath>Defs/GeneDef[defName = "BEWH_Ossmodula"]</xpath>
-                <value>
-                    <statFactors>
-                        <LeatherAmount>1.25</LeatherAmount>
-                        <MeatAmount>1.25</MeatAmount>
-                        <Mass>1.25</Mass>
-                    </statFactors>
-                </value>
             </li>
         </operations>
     </Operation>

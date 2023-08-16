@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- Chaos Power Armor-->
+  <ResearchProjectDef>
+    <defName>BEWH_ChaosPowerArmor</defName>
+    <label>Chaos Power Armor</label>
+    <description>Unlocks recipes for creating chaos power armor.</description>
+    <baseCost>10000</baseCost>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+      <li>AdvancedFabrication</li>
+      <li>CataphractArmor</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>18</researchViewX>
+    <researchViewY>2</researchViewY>
+  </ResearchProjectDef>
+
+
+  <!-- Power Armor-->
+  <ResearchProjectDef>
+    <defName>BEWH_PowerArmor</defName>
+    <label>Power Armor</label>
+    <description>Unlocks recipes for creating power armor.</description>
+    <baseCost>10000</baseCost>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+      <li>AdvancedFabrication</li>
+      <li>CataphractArmor</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>18</researchViewX>
+    <researchViewY>3</researchViewY>
+  </ResearchProjectDef>
+
+</Defs>

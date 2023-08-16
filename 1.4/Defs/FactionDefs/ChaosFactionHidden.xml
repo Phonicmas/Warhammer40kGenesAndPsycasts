@@ -61,6 +61,7 @@
                 <kindDef>Combat</kindDef>
                 <commonality>100</commonality>
                 <options>
+                    <BEWH_ChaosCultistUndivided>100</BEWH_ChaosCultistUndivided>
                     <BEWH_ChaosMarineUndivided>100</BEWH_ChaosMarineUndivided>
                     <BEWH_ChaosMarineUndividedPsyker>10</BEWH_ChaosMarineUndividedPsyker>
                     <BEWH_DPUndivided>1</BEWH_DPUndivided>
@@ -71,6 +72,7 @@
                 <kindDef>Combat</kindDef>
                 <commonality>100</commonality>
                 <options>
+                    <BEWH_ChaosCultistKhorne>100</BEWH_ChaosCultistKhorne>
                     <BEWH_ChaosMarineKhorne>100</BEWH_ChaosMarineKhorne>
                     <BEWH_DPKhorne>1</BEWH_DPKhorne>
                 </options>
@@ -80,6 +82,7 @@
                 <kindDef>Combat</kindDef>
                 <commonality>100</commonality>
                 <options>
+                    <BEWH_ChaosCultistNurgle>100</BEWH_ChaosCultistNurgle>
                     <BEWH_ChaosMarineNurgle>100</BEWH_ChaosMarineNurgle>
                     <BEWH_ChaosMarineNurglePsyker>10</BEWH_ChaosMarineNurglePsyker>
                     <BEWH_DPNurgle>1</BEWH_DPNurgle>
@@ -90,6 +93,7 @@
                 <kindDef>Combat</kindDef>
                 <commonality>100</commonality>
                 <options>
+                    <BEWH_ChaosCultistSlaanesh>100</BEWH_ChaosCultistSlaanesh>
                     <BEWH_ChaosMarineSlaanesh>100</BEWH_ChaosMarineSlaanesh>
                     <BEWH_ChaosMarineSlaaneshPsyker>10</BEWH_ChaosMarineSlaaneshPsyker>
                     <BEWH_DPSlaanesh>1</BEWH_DPSlaanesh>
@@ -100,21 +104,10 @@
                 <kindDef>Combat</kindDef>
                 <commonality>100</commonality>
                 <options>
+                    <BEWH_ChaosCultistTzeentch>1</BEWH_ChaosCultistTzeentch>
                     <BEWH_ChaosMarineTzeentch>100</BEWH_ChaosMarineTzeentch>
                     <BEWH_ChaosMarineTzeentchPsyker>50</BEWH_ChaosMarineTzeentchPsyker>
                     <BEWH_DPTzeentch>1</BEWH_DPTzeentch>
-                </options>
-            </li>
-            <!-- Cultist Fight -->
-            <li>
-                <kindDef>Combat</kindDef>
-                <commonality>1000</commonality>
-                <options>
-                    <BEWH_ChaosCultistUndivided>1</BEWH_ChaosCultistUndivided>
-                    <BEWH_ChaosCultistKhorne>1</BEWH_ChaosCultistKhorne>
-                    <BEWH_ChaosCultistNurgle>1</BEWH_ChaosCultistNurgle>
-                    <BEWH_ChaosCultistSlaanesh>1</BEWH_ChaosCultistSlaanesh>
-                    <BEWH_ChaosCultistTzeentch>1</BEWH_ChaosCultistTzeentch>
                 </options>
             </li>
         </pawnGroupMakers>

@@ -18,13 +18,11 @@ namespace BEWH
 
         public static void CorpseTick(Corpse __instance)
         {
-            Pawn pawn = __instance.InnerPawn;
-            Hediff hediff = pawn.health.hediffSet.hediffs.Find((Hediff x) => x.def == BEWHDefOf.BEWH_DaemonPrince && x.Visible);
-            if (hediff != null)
+            if (__instance.InnerPawn.health.hediffSet.hediffs.Find((Hediff x) => x.def == BEWHDefOf.BEWH_DaemonPrince && x.Visible) != null)
             {
                 if (Find.TickManager.TicksGame - __instance.timeOfDeath >= 120000)
                 {
-                    ResurrectionUtility.Resurrect(pawn);
+                    ResurrectionUtility.Resurrect(__instance.InnerPawn);
                 }
             }
         }

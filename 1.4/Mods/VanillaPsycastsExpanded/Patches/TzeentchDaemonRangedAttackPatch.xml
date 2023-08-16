@@ -3,43 +3,17 @@
     <Operation Class="PatchOperationSequence">
         <operations>
             <!-- Pink horror ranged attack -->
-            <li Class="PatchOperationAdd">
-                <xpath>Defs/ThingDef[defName = "BEWH_PinkHorror"]</xpath>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[@Name = "BEWH_PinkHorrorBase"]/verbs/li[label="ranged"]/defaultProjectile</xpath>
                 <value>
-                    <verbs>
-                        <li>
-                            <verbClass>Verb_Shoot</verbClass>
-                            <hasStandardCommand>true</hasStandardCommand>
-                            <defaultProjectile>BEWH_PinkHorrorProjectile</defaultProjectile>
-                            <warmupTime>1.0</warmupTime>
-                            <range>25.9</range>
-                            <ticksBetweenBurstShots>20</ticksBetweenBurstShots>
-                            <burstShotCount>2</burstShotCount>
-                            <soundCast>Shot_ChargeRifle</soundCast>
-                            <soundCastTail>GunTail_Medium</soundCastTail>
-                            <muzzleFlashScale>9</muzzleFlashScale>
-                        </li>
-                    </verbs>
+                    <defaultProjectile>BEWH_PinkHorrorProjectile</defaultProjectile>
                 </value>
             </li>
             <!-- Blue horror ranged attack -->
-            <li Class="PatchOperationAdd">
-                <xpath>Defs/ThingDef[defName = "BEWH_BlueHorror"]</xpath>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[@Name = "BEWH_BlueHorrorBase"]/verbs/li[label="ranged"]/defaultProjectile</xpath>
                 <value>
-                    <verbs>
-                        <li>
-                            <verbClass>Verb_Shoot</verbClass>
-                            <hasStandardCommand>true</hasStandardCommand>
-                            <defaultProjectile>BEWH_BlueHorrorProjectile</defaultProjectile>
-                            <warmupTime>1.0</warmupTime>
-                            <range>18.9</range>
-                            <ticksBetweenBurstShots>20</ticksBetweenBurstShots>
-                            <burstShotCount>2</burstShotCount>
-                            <soundCast>Shot_ChargeRifle</soundCast>
-                            <soundCastTail>GunTail_Medium</soundCastTail>
-                            <muzzleFlashScale>9</muzzleFlashScale>
-                        </li>
-                    </verbs>
+                    <defaultProjectile>BEWH_BlueHorrorProjectile</defaultProjectile>
                 </value>
             </li>
         </operations>

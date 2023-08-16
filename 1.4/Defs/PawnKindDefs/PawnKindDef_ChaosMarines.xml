@@ -102,8 +102,8 @@
             <li>UltratechMelee</li>
         </weaponTags>
         <apparelRequired>
-            <li>Apparel_PowerArmor</li>
-            <li>Apparel_PowerArmorHelmet</li>
+            <li>BEWH_ImperiumPowerArmor</li>
+            <li>BEWH_ImperiumPowerArmorHelmet</li>
         </apparelRequired>
         <disallowedTraits>
             <li>Brawler</li>
@@ -126,8 +126,8 @@
             <li>UltratechMelee</li>
         </weaponTags>
         <apparelRequired>
-            <li>Apparel_ArmorMarinePrestige</li>
-            <li>Apparel_ArmorMarineHelmetPrestige</li>
+            <li>BEWH_ImperiumPowerArmor</li>
+            <li>BEWH_ImperiumPowerArmorHelmet</li>
         </apparelRequired>
         <disallowedTraits>
             <li>Brawler</li>
@@ -159,8 +159,8 @@
             <li>UltratechMelee</li>
         </weaponTags>
         <apparelRequired>
-            <li>Apparel_PowerArmor</li>
-            <li>Apparel_PowerArmorHelmet</li>
+            <li>BEWH_KhornePowerArmor</li>
+            <li>BEWH_KhornePowerArmorHelmet</li>
         </apparelRequired>
         <forcedTraits>
             <li>Brawler</li>
@@ -189,8 +189,8 @@
             <li>UltratechMelee</li>
         </weaponTags>
         <apparelRequired>
-            <li>Apparel_PowerArmor</li>
-            <li>Apparel_PowerArmorHelmet</li>
+            <li>BEWH_NurglePowerArmor</li>
+            <li>BEWH_NurglePowerArmorHelmet</li>
         </apparelRequired>
         <disallowedTraits>
             <li>Brawler</li>
@@ -213,8 +213,8 @@
             <li>UltratechMelee</li>
         </weaponTags>
         <apparelRequired>
-            <li>Apparel_ArmorMarinePrestige</li>
-            <li>Apparel_ArmorMarineHelmetPrestige</li>
+            <li>BEWH_NurglePowerArmor</li>
+            <li>BEWH_NurglePowerArmorHelmet</li>
         </apparelRequired>
         <disallowedTraits>
             <li>Brawler</li>
@@ -247,8 +247,8 @@
             <li>UltratechMelee</li>
         </weaponTags>
         <apparelRequired>
-            <li>Apparel_PowerArmor</li>
-            <li>Apparel_PowerArmorHelmet</li>
+            <li>BEWH_SlaaneshPowerArmor</li>
+            <li>BEWH_SlaaneshPowerArmorHelmet</li>
         </apparelRequired>
         <disallowedTraits>
             <li>Brawler</li>
@@ -271,8 +271,8 @@
             <li>UltratechMelee</li>
         </weaponTags>
         <apparelRequired>
-            <li>Apparel_ArmorMarinePrestige</li>
-            <li>Apparel_ArmorMarineHelmetPrestige</li>
+            <li>BEWH_SlaaneshPowerArmor</li>
+            <li>BEWH_SlaaneshPowerArmorHelmet</li>
         </apparelRequired>
         <disallowedTraits>
             <li>Brawler</li>
@@ -299,14 +299,13 @@
     <PawnKindDef ParentName="ChaosMarineBasePawn">
         <defName>BEWH_ChaosMarineTzeentch</defName>
         <label>Tzeentch Marine</label>
-        <apparelColor>(0,60,155)</apparelColor>
         <weaponTags>
             <li>SpacerGun</li>
             <li>UltratechMelee</li>
         </weaponTags>
         <apparelRequired>
-            <li>Apparel_ArmorMarinePrestige</li>
-            <li>Apparel_ArmorMarineHelmetPrestige</li>
+            <li>BEWH_TzeentchPowerArmor</li>
+            <li>BEWH_TzeentchPowerArmorHelmet</li>
         </apparelRequired>
         <disallowedTraits>
             <li>Brawler</li>
@@ -323,14 +322,13 @@
     <PawnKindDef ParentName="ChaosMarineBasePawn">
         <defName>BEWH_ChaosMarineTzeentchPsyker</defName>
         <label>Tzeentch Psyker</label>
-        <apparelColor>(0,60,155)</apparelColor>
         <weaponTags>
             <li>SpacerGun</li>
             <li>UltratechMelee</li>
         </weaponTags>
         <apparelRequired>
-            <li>Apparel_ArmorMarinePrestige</li>
-            <li>Apparel_ArmorMarineHelmetPrestige</li>
+            <li>BEWH_TzeentchPowerArmor</li>
+            <li>BEWH_TzeentchPowerArmorHelmet</li>
         </apparelRequired>
         <disallowedTraits>
             <li>Brawler</li>
