@@ -18,6 +18,10 @@ namespace Psyker
 
         public static void CorpseTick(Corpse __instance)
         {
+            if (__instance == null || __instance.InnerPawn == null)
+            {
+                return;
+            }
             if (__instance.InnerPawn.health.hediffSet.hediffs.Find((Hediff x) => x.def == PsykerDefOf.BEWH_NurglesRot && x.Visible) != null)
             {
                 __instance.InnerPawn.Strip();
