@@ -4,7 +4,7 @@
     <!-- Recipe Base -->
 
     <RecipeDef Name="AscendRecipeBase" Abstract="True">
-        <jobString>Communing with God Emperor</jobString>
+        <jobString>Communing with the God Emperor</jobString>
         <workerClass>BEWH.RitualRecipeWorkerClass</workerClass>
         <workAmount>500</workAmount>
         <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -17,7 +17,7 @@
     <RecipeDef ParentName="AscendRecipeBase">
         <defName>BEWH_CustodesAscend</defName>
         <label>Ascend to Custodes</label>
-        <description>Become a mighty Custodes and protect the Emperor</description>
+        <description>Become a mighty Custodes and protect the Emperor.</description>
         <uiIconThing>BEWH_ImperiumSpot</uiIconThing>
         <ingredients>
             <li>
@@ -42,7 +42,7 @@
     <RecipeDef ParentName="AscendRecipeBase">
         <defName>BEWH_PrimarchAscend</defName>
         <label>Ascend to Primarch</label>
-        <description>Become a mighty Primarch and wage war on chaos</description>
+        <description>Become a mighty Primarch and wage war on chaos.</description>
         <uiIconThing>BEWH_ImperiumSpot</uiIconThing>
         <ingredients>
             <li>
@@ -60,6 +60,25 @@
             <Intellectual>16</Intellectual>
             <Social>16</Social>
         </skillRequirements>
+    </RecipeDef>
+
+    <!-- Pariah -->
+
+    <RecipeDef ParentName="AscendRecipeBase">
+        <defName>BEWH_PariahAscend</defName>
+        <label>Become a Blank</label>
+        <description>Become a Blank and suppress psykers.</description>
+        <uiIconThing>BEWH_ImperiumSpot</uiIconThing>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Gold</li>
+                    </thingDefs>
+                </filter>
+                <count>100</count>
+            </li>
+        </ingredients>
     </RecipeDef>
 
 </Defs>

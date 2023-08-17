@@ -13,20 +13,22 @@ https://forms.gle/5YpXFs7UgMokhvYa7
 4. Make greater daemon sprites for all gods.
 5. Give Khorne marked pawns special abilities that grows stronger the more they've killed.
 6. Give daemon respawn some effect
-7. Make more chaos genes, like tentacle of tzeentch or mouth of nurgle, make them work on the ritual system. Maybe a random chance to get a beneficial mutation or a bad one.
-8. Special effect for daemon ressurection and summoning.
+7. Special effect for daemon ressurection and summoning.
 
 ## Ideas
 1. Pawns not marked by khorne go beserk when wielding hellblade?
 2. Wounded space marine drop pod - for genes acqusition
 3. Complete gene drop pod - archmagus misplaced these
 4. Chapter specific genes?
-5. Acquire psyker genes through rituals?
-6. CE support? (get help somewhere)
+5. Ork Genes?
+6. Make item that when used created a whole gene-seed ready for use, make expensive and require friendship with imperium
+7. Make more chaos genes, like tentacle of tzeentch or mouth of nurgle, make them work on the ritual system. Maybe a random chance to get a beneficial mutation or a bad one.
 
 ## Fixes to do
 1. Psytrainer quest reward giving access to paths without psyker gene. (VPE thing, need to look into code and harmony fix it?)
 2. diseaseProgressionFactor might stop some diseases from healing (Such as nurgles rot)
+3. make daemon resurrection and plaguebeaerer hediff only harmony patch those they are on.
+4. imperium faction quests not showing up properly for some?
 
 ## Genes
 First 19 gene-seed have a complexity of 2, all 3 primaris have a complexity of 4 and requires 1 archite capsule.

@@ -85,7 +85,7 @@
                 <range>3~10</range>
             </li>
         </skills>
-        <combatPower>200</combatPower>
+        <combatPower>40</combatPower>
     </PawnKindDef>
 
     <!-- Undivided -->

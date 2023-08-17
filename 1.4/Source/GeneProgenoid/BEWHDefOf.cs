@@ -9,9 +9,15 @@ namespace BEWH
     {
         public static GeneDef BEWH_Custodes;
         public static GeneDef BEWH_Primarch;
+
         public static GeneDef BEWH_SigmaPariah;
         public static GeneDef BEWH_UpsilonPariah;
         public static GeneDef BEWH_OmegaPariah;
+
+        public static GeneDef BEWH_IotaPsyker;
+        public static GeneDef BEWH_Psyker;
+        public static GeneDef BEWH_DeltaPsyker;
+        public static GeneDef BEWH_BetaPsyker;
 
         public static GeneDef BEWH_SecondaryHeart;
         public static GeneDef BEWH_Ossmodula;

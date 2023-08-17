@@ -3,7 +3,8 @@
 	<v1.4>
 		<li>/</li>
 		<li>1.4</li>
+		<li IfModActive="CETeam.CombatExtended">1.4/Mods/CombatExtended</li>
 		<li IfModActive="VanillaExpanded.VPsycastsE">1.4/Mods/VanillaPsycastsExpanded</li>
 	</v1.4>
-
+	
 </loadFolders>

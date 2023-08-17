@@ -12,6 +12,9 @@
         <thingCategories>
             <li>WeaponsMelee</li>
         </thingCategories>
+        <tradeTags>
+            <li>DaemonMelee</li>
+        </tradeTags>
     </ThingDef>
 
     <!-- Hellblade -->
@@ -73,7 +76,7 @@
                     <li>Cut</li>
                 </capacities>
                 <power>10</power>
-                <cooldownTime>0.6</cooldownTime>
+                <cooldownTime>0.65</cooldownTime>
                 <armorPenetration>0.8</armorPenetration>
             </li>
             <li>

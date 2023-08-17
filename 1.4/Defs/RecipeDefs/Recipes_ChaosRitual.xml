@@ -266,4 +266,24 @@
         </skillRequirements>
     </RecipeDef>
 
+
+    <!-- Psyker -->
+
+    <RecipeDef ParentName="RitualRecipeBase">
+        <defName>BEWH_PsykerRitual</defName>
+        <label>Become a Psyker</label>
+        <description>Become a Psyker and wield powerful psychic abilities.</description>
+        <uiIconThing>BEWH_UndividedRitualSpot</uiIconThing>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Skull</li>
+                    </thingDefs>
+                </filter>
+                <count>50</count>
+            </li>
+        </ingredients>
+    </RecipeDef>
+
 </Defs>

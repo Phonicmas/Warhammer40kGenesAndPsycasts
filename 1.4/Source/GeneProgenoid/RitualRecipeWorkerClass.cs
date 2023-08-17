@@ -70,6 +70,12 @@ namespace BEWH
                 case "BEWH_PrimarchAscend":
                     billDoer.genes.AddGene(BEWHDefOf.BEWH_Primarch, true);
                     break;
+                case "BEWH_PsykerRitual":
+                    billDoer.genes.AddGene(BEWHDefOf.BEWH_IotaPsyker, true);
+                    break;
+                case "BEWH_PariahAscend":
+                    billDoer.genes.AddGene(BEWHDefOf.BEWH_SigmaPariah, true);
+                    break;
                 default:
                     break;
             }
