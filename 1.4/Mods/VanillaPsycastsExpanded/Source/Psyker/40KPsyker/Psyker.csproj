@@ -62,10 +62,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MapComponent_Plaguebearer.cs" />
     <Compile Include="PsycastsAbility.cs" />
     <Compile Include="HarmonyPatchEcstaticOblivion.cs" />
-    <Compile Include="HediffCompPlaguebearer.cs" />
-    <Compile Include="HediffCompPropertiesPlaguebearer.cs" />
     <Compile Include="PsykerDefOf.cs" />
     <Compile Include="HediffCompPropertiesGeneScramble.cs" />
     <Compile Include="HediffCompGeneScramble.cs" />

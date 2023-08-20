@@ -122,14 +122,10 @@
 	<HediffDef>
 		<defName>BEWH_DaemonPrince</defName>
 		<label>daemon prince</label>
-		<hediffClass>HediffWithComps</hediffClass>
 		<description>This pawn has ascended to daemonhood.</description>
 		<everCurableByItem>false</everCurableByItem>
 		<keepOnBodyPartRestoration>true</keepOnBodyPartRestoration>
 		<isBad>false</isBad>
-		<comps>
-			<li Class="BEWH.HediffCompPropertiesDaemonPrince"></li>
-		</comps>
 	</HediffDef>
 
 </Defs>

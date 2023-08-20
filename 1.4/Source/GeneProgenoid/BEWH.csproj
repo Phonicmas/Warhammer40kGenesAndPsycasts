@@ -57,6 +57,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MapComponent_DaemonPrince.cs" />
     <Compile Include="MentalState_FriendlyDaemon.cs" />
     <Compile Include="DeathActionWorker_Daemon.cs" />
     <Compile Include="Verb_CastAbilityKhorneSummon.cs" />
@@ -64,11 +65,7 @@
     <Compile Include="HarmonyPatchMaxHealth.cs" />
     <Compile Include="HarmonyPatchMultiLung.cs" />
     <Compile Include="HarmonyPatchSecondaryHeart.cs" />
-    <Compile Include="HediffCompDaemonPrince.cs" />
     <Compile Include="AbilityMultiExplode.cs" />
-    <Compile Include="HediffCompPropertiesDaemonPrince.cs" />
-    <Compile Include="AscendWorkGiver_DoBill.cs" />
-    <Compile Include="AscendRecipeWorkerClass.cs" />
     <Compile Include="RoyalTitleAwardWorker_PrimarisMarine.cs" />
     <Compile Include="RoyalTitleAwardWorker_SpaceMarine.cs" />
     <Compile Include="RitualWorkGiver_DoBill.cs" />

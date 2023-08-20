@@ -1,22 +1,23 @@
-﻿using RimWorld;
+﻿using PsykerMod;
+using RimWorld;
 using System.Collections.Generic;
 using System.Linq;
 using Verse;
 
 
-namespace BEWH
+namespace Psyker
 {
-    public class MapComponent_DaemonPrince : MapComponent
+    public class MapComponent_Plaguebearer : MapComponent
     {
-        public const int checkingInterval = 6000;
+        public const int checkingInterval = 100;
 
-        public const int deathTiemr = 12000;
+        public const int spawnTimer = 200;
 
         public int tickCounter = 0;
 
         public List<Corpse> deadDaemonPrincePawns = new List<Corpse>();
 
-        public MapComponent_DaemonPrince(Map map)
+        public MapComponent_Plaguebearer(Map map)
             : base(map)
         {
         }
@@ -32,7 +33,8 @@ namespace BEWH
                 {
                     if (thing is Corpse corpse)
                     {
-                        if (corpse.InnerPawn.genes.HasGene(BEWHDefOf.BEWH_DaemonMutation) && !deadDaemonPrincePawns.Contains(corpse))
+                        
+                        if (corpse.InnerPawn.health.hediffSet.hediffs.Find((Hediff x) => x.def == PsykerDefOf.BEWH_NurglesRot && x.Visible) != null && !deadDaemonPrincePawns.Contains(corpse))
                         {
                             deadDaemonPrincePawns.Add(corpse);
                         }
@@ -43,19 +45,23 @@ namespace BEWH
                     List<Corpse> toRemove = new List<Corpse>();
                     foreach (Corpse corpse in deadDaemonPrincePawns)
                     {
-                        if (Find.TickManager.TicksGame - corpse.timeOfDeath >= deathTiemr)
+                        if (Find.TickManager.TicksGame - corpse.timeOfDeath >= spawnTimer)
                         {
                             toRemove.Add(corpse);
-                            ResurrectionUtility.Resurrect(corpse.InnerPawn);
+                            corpse.InnerPawn.Strip();
+                            Pawn pb = PawnGenerator.GeneratePawn(PsykerDefOf.BEWH_Plaguebearer);
+                            GenSpawn.Spawn(pb, corpse.Position, corpse.Map);
+                            pb.HostileTo(Faction.OfPlayer);
                         }
                     }
                     for (int i = 0; i < toRemove.Count; i++)
                     {
                         deadDaemonPrincePawns.Remove(toRemove.First());
+                        toRemove.First().DeSpawn();
                     }
                     toRemove.Clear();
                 }
-                
+
             }
             tickCounter++;
         }

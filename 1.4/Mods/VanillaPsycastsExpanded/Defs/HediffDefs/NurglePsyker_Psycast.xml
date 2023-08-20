@@ -44,7 +44,6 @@
 			<li Class="HediffCompProperties_Effecter">
 				<stateEffecter>VPE_Liferot</stateEffecter>
 			</li>
-			<li Class="Psyker.HediffCompPropertiesPlaguebearer"></li>
 		</comps>
 		<stages>
 			<li>

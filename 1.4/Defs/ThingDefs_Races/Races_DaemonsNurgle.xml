@@ -3,7 +3,7 @@
 
     <!-- ========= Plaguebeaerer base ========= -->
     <ThingDef ParentName="BEWH_DaemonBase" Name="BEWH_PlaguebearerBase" Abstract="True">
-        <label>pleaguebearer</label>
+        <label>plaguebearer</label>
         <description>Daemon of Nurgle</description>
         <statBases>
             <MarketValue>150</MarketValue>

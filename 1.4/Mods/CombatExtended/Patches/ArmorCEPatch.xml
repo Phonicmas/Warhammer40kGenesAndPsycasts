@@ -13,7 +13,7 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[@Name="BEWH_PowerArmorBase"]/statBases/ArmorRating_Blunt</xpath>
 		<value>
-			<ArmorRating_Blunt>75</ArmorRating_Blunt>
+			<ArmorRating_Blunt>65</ArmorRating_Blunt>
 		</value>
 	</Operation>
 
@@ -80,7 +80,7 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[@Name="BEWH_PowerArmorHelmetBase"]/statBases/ArmorRating_Blunt</xpath>
 		<value>
-			<ArmorRating_Blunt>67</ArmorRating_Blunt>
+			<ArmorRating_Blunt>57</ArmorRating_Blunt>
 		</value>
 	</Operation>
 

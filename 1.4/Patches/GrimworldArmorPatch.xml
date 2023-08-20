@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Grimworld 40,000 - Angels of Death</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/PawnKindDef[defName = "BEWH_SpaceMarine"]/apparelRequired</xpath>
+					<value>
+						<apparelRequired>
+							<li>ODZ_40k_AS_UM_MkVIIArmor</li>
+							<li>ODZ_40k_AS_FB_UM_MkVIIHelmet</li>
+						</apparelRequired>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/PawnKindDef[defName = "BEWH_PrimarisSpaceMarine"]/apparelRequired</xpath>
+					<value>
+						<apparelRequired>
+							<li>ODZ_40k_AS_UM_MkXArmor</li>
+							<li>ODZ_40k_AS_UM_MkXHelmet</li>
+						</apparelRequired>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/PawnKindDef[defName = "BEWH_SpaceMarinePsyker"]/apparelRequired</xpath>
+					<value>
+						<apparelRequired>
+							<li>ODZ_40k_AS_UM_MkXArmor</li>
+							<li>ODZ_40k_AS_SG_UM_MkXHelmet</li>
+						</apparelRequired>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/PawnKindDef[defName = "BEWH_Custodes"]/apparelRequired</xpath>
+					<value>
+						<apparelRequired>
+							<li>ODZ_40k_AS_UM_MkXArmor</li>
+							<li>ODZ_40k_AS_LT_UM_MkXHelmet</li>
+						</apparelRequired>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/PawnKindDef[defName = "BEWH_LordCommander"]/apparelRequired</xpath>
+					<value>
+						<apparelRequired>
+							<li>ODZ_40k_AS_UM_GravisArmor</li>
+							<li>ODZ_40k_AS_FB_UM_GravisHelmet</li>
+						</apparelRequired>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

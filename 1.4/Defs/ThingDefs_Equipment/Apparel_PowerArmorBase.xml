@@ -19,7 +19,7 @@
             <Mass>11</Mass>
             <Flammability>0.2</Flammability>
             <ArmorRating_Sharp>1.4</ArmorRating_Sharp>
-            <ArmorRating_Blunt>1.4</ArmorRating_Blunt>
+            <ArmorRating_Blunt>1</ArmorRating_Blunt>
             <ArmorRating_Heat>1</ArmorRating_Heat>
             <Insulation_Cold>30</Insulation_Cold>
             <Insulation_Heat>30</Insulation_Heat>
@@ -82,7 +82,7 @@
             <Mass>11</Mass>
             <Flammability>0.2</Flammability>
             <ArmorRating_Sharp>1.4</ArmorRating_Sharp>
-            <ArmorRating_Blunt>1.4</ArmorRating_Blunt>
+            <ArmorRating_Blunt>1</ArmorRating_Blunt>
             <ArmorRating_Heat>1</ArmorRating_Heat>
             <Insulation_Cold>30</Insulation_Cold>
             <Insulation_Heat>30</Insulation_Heat>

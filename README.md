@@ -7,13 +7,12 @@ https://forms.gle/5YpXFs7UgMokhvYa7
 1. Make a standalone psycast mod
 
 ## To do (Not ordered)
-1. Make nurgles rot transform pawn into plaugebearer upon death.
-2. Make custom code to remove/prevent hediffs from getting applied, anything not warp caused.
-3. Make progenoid glands give an additional harvest of gene-seeds when a pawn dies.
-4. Make greater daemon sprites for all gods.
-5. Give Khorne marked pawns special abilities that grows stronger the more they've killed.
-6. Give daemon respawn some effect
-7. Special effect for daemon ressurection and summoning.
+1. Make custom code to remove/prevent hediffs from getting applied, anything not warp caused.
+2. Make progenoid glands give an additional harvest of gene-seeds when a pawn dies.
+3. Make greater daemon sprites for all gods.
+4. Give Khorne marked pawns special abilities that grows stronger the more they've killed.
+5. Give daemon respawn some effect
+6. Special effect for daemon ressurection and summoning.
 
 ## Ideas
 1. Pawns not marked by khorne go beserk when wielding hellblade?
@@ -23,12 +22,16 @@ https://forms.gle/5YpXFs7UgMokhvYa7
 5. Ork Genes?
 6. Make item that when used created a whole gene-seed ready for use, make expensive and require friendship with imperium
 7. Make more chaos genes, like tentacle of tzeentch or mouth of nurgle, make them work on the ritual system. Maybe a random chance to get a beneficial mutation or a bad one.
+8. Nervous breakdown may cause chaos to notice and do stuff?
+9. Harvest psychic potential from dead psykers to upgrade other psychic powers
 
 ## Fixes to do
 1. Psytrainer quest reward giving access to paths without psyker gene. (VPE thing, need to look into code and harmony fix it?)
 2. diseaseProgressionFactor might stop some diseases from healing (Such as nurgles rot)
 3. make daemon resurrection and plaguebeaerer hediff only harmony patch those they are on.
 4. imperium faction quests not showing up properly for some?
+5. fix factions, chaos to properly raid and imperium to properly show
+6. Use small and big framework for people who want HAR compatibility
 
 ## Genes
 First 19 gene-seed have a complexity of 2, all 3 primaris have a complexity of 4 and requires 1 archite capsule.

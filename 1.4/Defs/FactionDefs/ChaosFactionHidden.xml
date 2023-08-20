@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
     <FactionDef ParentName="FactionBase">
@@ -44,8 +44,13 @@
                 </categoriesAdulthood>
             </li>
         </backstoryFilters>
-        <earliestRaidDays>60</earliestRaidDays>
+        <earliestRaidDays>45</earliestRaidDays>
         <autoFlee>false</autoFlee>
+        <raidCommonalityFromPointsCurve>
+            <points>
+                <li>(0, 1)</li>
+            </points>
+        </raidCommonalityFromPointsCurve>
         <maxPawnCostPerTotalPointsCurve>
             <points>
                 <li>(0,0)</li>
