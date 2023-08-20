@@ -34,7 +34,7 @@ namespace Psyker
                     if (thing is Corpse corpse)
                     {
                         
-                        if (corpse.InnerPawn.health.hediffSet.hediffs.Find((Hediff x) => x.def == PsykerDefOf.BEWH_NurglesRot && x.Visible) != null && !deadDaemonPrincePawns.Contains(corpse))
+                        if (corpse.InnerPawn != null && corpse.InnerPawn.health.hediffSet.hediffs.Find((Hediff x) => x.def == PsykerDefOf.BEWH_NurglesRot && x.Visible) != null && !deadDaemonPrincePawns.Contains(corpse))
                         {
                             deadDaemonPrincePawns.Add(corpse);
                         }
@@ -48,7 +48,10 @@ namespace Psyker
                         if (Find.TickManager.TicksGame - corpse.timeOfDeath >= spawnTimer)
                         {
                             toRemove.Add(corpse);
-                            corpse.InnerPawn.Strip();
+                            if (corpse.InnerPawn != null)
+                            {
+                                corpse.InnerPawn.Strip();
+                            }
                             Pawn pb = PawnGenerator.GeneratePawn(PsykerDefOf.BEWH_Plaguebearer);
                             GenSpawn.Spawn(pb, corpse.Position, corpse.Map);
                             pb.HostileTo(Faction.OfPlayer);

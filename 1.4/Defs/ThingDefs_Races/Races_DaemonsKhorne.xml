@@ -90,6 +90,7 @@
         <weaponTags>
             <li>Bloodletter</li>
         </weaponTags>
+        <destroyGearOnDrop>true</destroyGearOnDrop>
     </PawnKindDef>
 
 

@@ -90,6 +90,7 @@
         <weaponTags>
             <li>Daemonette</li>
         </weaponTags>
+        <destroyGearOnDrop>true</destroyGearOnDrop>
     </PawnKindDef>
 
 </Defs>
