@@ -8,6 +8,10 @@ namespace BEWH
     {
         public override void Notify_IterationCompleted(Pawn billDoer, List<Thing> ingredients)
         {
+            if (recipe.GetModExtension<RitualDefModExtension>() == null)
+            {
+                return;
+            }
             List<GeneDef> genesToGive = recipe.GetModExtension<RitualDefModExtension>().givesGenes;
             List<GeneDef> genesToRemove = recipe.GetModExtension<RitualDefModExtension>().removesGenes;
 

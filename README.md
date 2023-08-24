@@ -1,7 +1,4 @@
-# Warhammer 40k - Genes and Psycasts for rimworld
-
-## Suggestions
-https://forms.gle/5YpXFs7UgMokhvYa7
+# Warhammer 40k - Genes and Psycasts for Rimworld
 
 ## Future Things?
 1. Make mod split into submods so people can pick a choose what they want (Genes, Psycast, Faction)
@@ -10,7 +7,6 @@ https://forms.gle/5YpXFs7UgMokhvYa7
 1. Make greater daemon sprites for all gods.
 2. Give Khorne marked pawns special abilities that grows stronger the more they've killed.
 3. Special effect for daemon ressurection and summoning.
-4. Rewrite ritual worker and recipes to be more mainstream, which means the recipe should be extended to contain fields for required genes, forbidden genes, jobfailstring and so on.
 
 ## Ideas
 1. Wounded space marine drop pod - for genes acqusition

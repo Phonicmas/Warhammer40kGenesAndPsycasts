@@ -19,6 +19,10 @@ namespace BEWH
                 {
                     return null;
                 }
+                if (billStack.FirstShouldDoNow.recipe.GetModExtension<RitualDefModExtension>() == null)
+                {
+                    return null;
+                }
                 string recipeDefName = billStack.FirstShouldDoNow.recipe.defName;
                 //Get info from modExtension
                 List<GeneDef> forbiddenGenes = billStack.FirstShouldDoNow.recipe.GetModExtension<RitualDefModExtension>().forbiddenGenes;
@@ -65,6 +69,10 @@ namespace BEWH
             {
                 BillStack billStack = billGiver.BillStack;
                 if (billStack.FirstShouldDoNow == null)
+                {
+                    return false;
+                }
+                if (billStack.FirstShouldDoNow.recipe.GetModExtension<RitualDefModExtension>() == null)
                 {
                     return false;
                 }
