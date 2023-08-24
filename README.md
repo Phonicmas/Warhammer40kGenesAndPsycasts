@@ -10,6 +10,7 @@ https://forms.gle/5YpXFs7UgMokhvYa7
 1. Make greater daemon sprites for all gods.
 2. Give Khorne marked pawns special abilities that grows stronger the more they've killed.
 3. Special effect for daemon ressurection and summoning.
+4. Rewrite ritual worker and recipes to be more mainstream, which means the recipe should be extended to contain fields for required genes, forbidden genes, jobfailstring and so on.
 
 ## Ideas
 1. Wounded space marine drop pod - for genes acqusition
@@ -27,6 +28,7 @@ https://forms.gle/5YpXFs7UgMokhvYa7
 2. imperium faction quests not showing up properly for some?
 3. fix factions, chaos to properly raid and imperium to properly show?
 4. Patch for immortals mod when person is afflitced with nurgles rot
+5. Marines called using favor doesnt have the correct xenotype
 
 ## Genes
 First 19 gene-seed have a complexity of 2, all 3 primaris have a complexity of 4 and requires 1 archite capsule.

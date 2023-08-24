@@ -10,11 +10,9 @@ namespace BEWH
     {
         public const int checkingInterval = 10000;
 
-        public const int deathTiemr = 12000;
+        public const int deathTimer = 12000;
 
         public int tickCounter = 0;
-
-        public List<Corpse> deadDaemonPrincePawns = new List<Corpse>();
 
         public MapComponent_DaemonPrince(Map map)
             : base(map)
@@ -30,37 +28,18 @@ namespace BEWH
 
                 foreach (Thing thing in map.spawnedThings)
                 {
-                    if (thing is Corpse corpse)
+                    if (thing != null && thing is Corpse corpse)
                     {
-                        if (corpse.InnerPawn != null && corpse.InnerPawn.genes.HasGene(BEWHDefOf.BEWH_DaemonMutation) && !deadDaemonPrincePawns.Contains(corpse))
+                        if (corpse.InnerPawn != null && corpse.InnerPawn.genes != null && corpse.InnerPawn.genes.HasGene(BEWHDefOf.BEWH_DaemonMutation) && Find.TickManager.TicksGame - corpse.timeOfDeath >= deathTimer)
                         {
-                            deadDaemonPrincePawns.Add(corpse);
+                            
+                            ResurrectionUtility.Resurrect(corpse.InnerPawn);
                         }
                     }
                 }
-                if (deadDaemonPrincePawns.Count > 0)
-                {
-                    List<Corpse> toRemove = new List<Corpse>();
-                    foreach (Corpse corpse in deadDaemonPrincePawns)
-                    {
-                        if (Find.TickManager.TicksGame - corpse.timeOfDeath >= deathTiemr)
-                        {
-                            toRemove.Add(corpse);
-                            if (corpse.InnerPawn != null)
-                            {
-                                ResurrectionUtility.Resurrect(corpse.InnerPawn);
-                            }
-                        }
-                    }
-                    for (int i = 0; i < toRemove.Count; i++)
-                    {
-                        deadDaemonPrincePawns.Remove(toRemove.First());
-                    }
-                    toRemove.Clear();
-                }
-                
             }
             tickCounter++;
         }
+
     }
 }

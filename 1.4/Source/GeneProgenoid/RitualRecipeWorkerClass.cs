@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using RimWorld;
+using System.Collections.Generic;
 using Verse;
 
 namespace BEWH
@@ -7,80 +8,41 @@ namespace BEWH
     {
         public override void Notify_IterationCompleted(Pawn billDoer, List<Thing> ingredients)
         {
-            switch (recipe.defName)
+            List<GeneDef> genesToGive = recipe.GetModExtension<RitualDefModExtension>().givesGenes;
+            List<GeneDef> genesToRemove = recipe.GetModExtension<RitualDefModExtension>().removesGenes;
+
+            if (billDoer.genes != null)
             {
-                case "BEWH_UndividedRitual":
-                    billDoer.genes.AddGene(BEWHDefOf.BEWH_UndividedMark, true);
-                    break;
-                case "BEWH_KhorneRitual":
-                    billDoer.genes.AddGene(BEWHDefOf.BEWH_KhorneMark, true);
-                    break;
-                case "BEWH_TzeentchRitual":
-                    billDoer.genes.AddGene(BEWHDefOf.BEWH_TzeentchMark, true);
-                    break;
-                case "BEWH_NurgleRitual":
-                    billDoer.genes.AddGene(BEWHDefOf.BEWH_NurgleMark, true);
-                    break;
-                case "BEWH_SlaaneshRitual":
-                    billDoer.genes.AddGene(BEWHDefOf.BEWH_SlaaneshMark, true);
-                    break;
-                case "BEWH_DPUndividedRitual":
-                    billDoer.genes.AddGene(BEWHDefOf.BEWH_DaemonMutation, true);
-                    billDoer.genes.AddGene(BEWHDefOf.BEWH_DaemonHide, true);
-                    billDoer.genes.AddGene(BEWHDefOf.BEWH_DaemonWings, true);
-                    billDoer.genes.AddGene(BEWHDefOf.BEWH_DaemonTail, true);
-                    billDoer.genes.AddGene(BEWHDefOf.BEWH_DaemonHorns, true);
-                    billDoer.genes.AddGene(BEWHDefOf.BEWH_UndividedColor, true);
-                    break;
-                case "BEWH_DPKhorneRitual":
-                    billDoer.genes.AddGene(BEWHDefOf.BEWH_DaemonMutation, true);
-                    billDoer.genes.AddGene(BEWHDefOf.BEWH_DaemonHide, true);
-                    billDoer.genes.AddGene(BEWHDefOf.BEWH_DaemonWings, true);
-                    billDoer.genes.AddGene(BEWHDefOf.BEWH_DaemonTail, true);
-                    billDoer.genes.AddGene(BEWHDefOf.BEWH_DaemonHorns, true);
-                    billDoer.genes.AddGene(BEWHDefOf.BEWH_KhorneColor, true);
-                    break;
-                case "BEWH_DPTzeentchRitual":
-                    billDoer.genes.AddGene(BEWHDefOf.BEWH_DaemonMutation, true);
-                    billDoer.genes.AddGene(BEWHDefOf.BEWH_DaemonHide, true);
-                    billDoer.genes.AddGene(BEWHDefOf.BEWH_DaemonWings, true);
-                    billDoer.genes.AddGene(BEWHDefOf.BEWH_DaemonTail, true);
-                    billDoer.genes.AddGene(BEWHDefOf.BEWH_DaemonHorns, true);
-                    billDoer.genes.AddGene(BEWHDefOf.BEWH_TzeencthColor, true);
-                    break;
-                case "BEWH_DPNurgleRitual":
-                    billDoer.genes.AddGene(BEWHDefOf.BEWH_DaemonMutation, true);
-                    billDoer.genes.AddGene(BEWHDefOf.BEWH_DaemonHide, true);
-                    billDoer.genes.AddGene(BEWHDefOf.BEWH_DaemonWings, true);
-                    billDoer.genes.AddGene(BEWHDefOf.BEWH_DaemonTail, true);
-                    billDoer.genes.AddGene(BEWHDefOf.BEWH_DaemonHorns, true);
-                    billDoer.genes.AddGene(BEWHDefOf.BEWH_NurgleColor, true);
-                    break;
-                case "BEWH_DPSlaaneshRitual":
-                    billDoer.genes.AddGene(BEWHDefOf.BEWH_DaemonMutation, true);
-                    billDoer.genes.AddGene(BEWHDefOf.BEWH_DaemonHide, true);
-                    billDoer.genes.AddGene(BEWHDefOf.BEWH_DaemonWings, true);
-                    billDoer.genes.AddGene(BEWHDefOf.BEWH_DaemonTail, true);
-                    billDoer.genes.AddGene(BEWHDefOf.BEWH_DaemonHorns, true);
-                    billDoer.genes.AddGene(BEWHDefOf.BEWH_SlaaneshColor, true);
-                    break;
-                case "BEWH_CustodesAscend":
-                    billDoer.genes.AddGene(BEWHDefOf.BEWH_Custodes, true);
-                    break;
-                case "BEWH_PrimarchAscend":
-                    billDoer.genes.AddGene(BEWHDefOf.BEWH_Primarch, true);
-                    break;
-                case "BEWH_PsykerRitual":
-                    billDoer.genes.AddGene(BEWHDefOf.BEWH_IotaPsyker, true);
-                    break;
-                case "BEWH_PariahAscend":
-                    billDoer.genes.AddGene(BEWHDefOf.BEWH_SigmaPariah, true);
-                    break;
-                default:
-                    break;
+                //Removes genes to remove
+                if (!genesToRemove.NullOrEmpty())
+                {
+                    List<Gene> removeThese = new List<Gene>();
+                    foreach (Gene gene in billDoer.genes.Xenogenes)
+                    {
+                        if (genesToRemove.Contains(gene.def))
+                        {
+                            removeThese.Add(gene);
+                        }
+                    }
+                    foreach (Gene gene in removeThese)
+                    {
+                        billDoer.genes.RemoveGene(gene);
+                    }
+                }
+                //Adds genes to give
+                if (!genesToGive.NullOrEmpty())
+                {
+                    foreach (GeneDef gene in genesToGive)
+                    {
+                        if (gene != null && !billDoer.genes.HasGene(gene))
+                        {
+                            billDoer.genes.AddGene(gene, true);
+                        }
+                    }
+                }
             }
         }
 
     }
 
-}   
+}

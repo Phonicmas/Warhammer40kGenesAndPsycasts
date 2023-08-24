@@ -182,17 +182,13 @@
                             <xpath>Defs/GeneDef[defName =
                                 "BEWH_DaemonMutation"]/statFactors/SM_BodySizeMultiplier</xpath>
                         </li>
-
                     </operations>
+                    
                 </match>
-            </li>
 
-            <!-- IF not -->
-            <li Class="PatchOperationFindMod">
-                <mods>
-                    <li>Big and Small + Prerequisites Framework</li>
-                </mods>
-                <match Class="PatchOperationSequence">
+
+
+                <nomatch Class="PatchOperationSequence">
                     <operations>
 
                         <li Class="PatchOperationRemove">
@@ -243,7 +239,7 @@
                         </li>
 
                     </operations>
-                </match>
+                </nomatch>
             </li>
 
         </operations>

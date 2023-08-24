@@ -60,6 +60,8 @@
     <Compile Include="MapComponent_DaemonPrince.cs" />
     <Compile Include="MentalState_FriendlyDaemon.cs" />
     <Compile Include="DeathActionWorker_Daemon.cs" />
+    <Compile Include="RitualDefModExtension.cs" />
+    <Compile Include="RitualWorkGiver_DoBill.cs" />
     <Compile Include="Verb_CastAbilityKhorneSummon.cs" />
     <Compile Include="DeathActionWorker_PinkHorror.cs" />
     <Compile Include="HarmonyPatchMaxHealth.cs" />
@@ -68,7 +70,7 @@
     <Compile Include="AbilityMultiExplode.cs" />
     <Compile Include="RoyalTitleAwardWorker_PrimarisMarine.cs" />
     <Compile Include="RoyalTitleAwardWorker_SpaceMarine.cs" />
-    <Compile Include="RitualWorkGiver_DoBill.cs" />
+    <Compile Include="RitualWorkGiver_DoBillLegacy.cs" />
     <Compile Include="RitualRecipeWorkerClass.cs" />
     <Compile Include="ProgenoidRemovalWorkerClass.cs" />
     <Compile Include="ThoughtWorkerOmegaPariah.cs" />

@@ -39,6 +39,20 @@
             <Plants>3</Plants>
             <Mining>3</Mining>
         </skillRequirements>
+        <modExtensions>
+            <li Class="BEWH.RitualDefModExtension">
+                <givesGenes>
+                    <li>BEWH_UndividedMark</li>
+                </givesGenes>
+                <forbiddenGenes>
+                    <li>BEWH_UndividedMark</li>
+                    <li>BEWH_KhorneMark</li>
+                    <li>BEWH_TzeentchMark</li>
+                    <li>BEWH_NurgleMark</li>
+                    <li>BEWH_SlaaneshMark</li>
+                </forbiddenGenes>
+            </li>
+        </modExtensions>
     </RecipeDef>
 
     <!-- Khorne -->
@@ -62,6 +76,20 @@
             <Melee>5</Melee>
             <Shooting>5</Shooting>
         </skillRequirements>
+        <modExtensions>
+            <li Class="BEWH.RitualDefModExtension">
+                <givesGenes>
+                    <li>BEWH_KhorneMark</li>
+                </givesGenes>
+                <forbiddenGenes>
+                    <li>BEWH_UndividedMark</li>
+                    <li>BEWH_KhorneMark</li>
+                    <li>BEWH_TzeentchMark</li>
+                    <li>BEWH_NurgleMark</li>
+                    <li>BEWH_SlaaneshMark</li>
+                </forbiddenGenes>
+            </li>
+        </modExtensions>
     </RecipeDef>
 
     <!-- Tzeentch -->
@@ -85,6 +113,20 @@
             <Intellectual>5</Intellectual>
             <Crafting>5</Crafting>
         </skillRequirements>
+        <modExtensions>
+            <li Class="BEWH.RitualDefModExtension">
+                <givesGenes>
+                    <li>BEWH_TzeentchMark</li>
+                </givesGenes>
+                <forbiddenGenes>
+                    <li>BEWH_UndividedMark</li>
+                    <li>BEWH_KhorneMark</li>
+                    <li>BEWH_TzeentchMark</li>
+                    <li>BEWH_NurgleMark</li>
+                    <li>BEWH_SlaaneshMark</li>
+                </forbiddenGenes>
+            </li>
+        </modExtensions>
     </RecipeDef>
 
     <!-- Nurgle -->
@@ -108,6 +150,20 @@
             <Plants>5</Plants>
             <Mining>5</Mining>
         </skillRequirements>
+        <modExtensions>
+            <li Class="BEWH.RitualDefModExtension">
+                <givesGenes>
+                    <li>BEWH_NurgleMark</li>
+                </givesGenes>
+                <forbiddenGenes>
+                    <li>BEWH_UndividedMark</li>
+                    <li>BEWH_KhorneMark</li>
+                    <li>BEWH_TzeentchMark</li>
+                    <li>BEWH_NurgleMark</li>
+                    <li>BEWH_SlaaneshMark</li>
+                </forbiddenGenes>
+            </li>
+        </modExtensions>
     </RecipeDef>
 
     <!-- Slaanesh -->
@@ -131,6 +187,20 @@
             <Social>5</Social>
             <Artistic>5</Artistic>
         </skillRequirements>
+        <modExtensions>
+            <li Class="BEWH.RitualDefModExtension">
+                <givesGenes>
+                    <li>BEWH_SlaaneshMark</li>
+                </givesGenes>
+                <forbiddenGenes>
+                    <li>BEWH_UndividedMark</li>
+                    <li>BEWH_KhorneMark</li>
+                    <li>BEWH_TzeentchMark</li>
+                    <li>BEWH_NurgleMark</li>
+                    <li>BEWH_SlaaneshMark</li>
+                </forbiddenGenes>
+            </li>
+        </modExtensions>
     </RecipeDef>
 
 
@@ -172,6 +242,27 @@
             <Plants>10</Plants>
             <Mining>10</Mining>
         </skillRequirements>
+        <modExtensions>
+            <li Class="BEWH.RitualDefModExtension">
+                <givesGenes>
+                    <li>BEWH_DaemonMutation</li>
+                    <li>BEWH_DaemonHide</li>
+                    <li>BEWH_DaemonWings</li>
+                    <li>BEWH_DaemonTail</li>
+                    <li>BEWH_DaemonHorns</li>
+                    <li>BEWH_UndividedColor</li>
+                </givesGenes>
+                <requiredGenes>
+                    <li>BEWH_UndividedMark</li>
+                </requiredGenes>
+                <forbiddenGenes>
+                    <li>BEWH_KhorneMark</li>
+                    <li>BEWH_TzeentchMark</li>
+                    <li>BEWH_NurgleMark</li>
+                    <li>BEWH_SlaaneshMark</li>
+                </forbiddenGenes>
+            </li>
+        </modExtensions>
     </RecipeDef>
 
     <!-- Daemon Prince Khorne -->
@@ -195,6 +286,27 @@
             <Melee>14</Melee>
             <Shooting>14</Shooting>
         </skillRequirements>
+        <modExtensions>
+            <li Class="BEWH.RitualDefModExtension">
+                <givesGenes>
+                    <li>BEWH_DaemonMutation</li>
+                    <li>BEWH_DaemonHide</li>
+                    <li>BEWH_DaemonWings</li>
+                    <li>BEWH_DaemonTail</li>
+                    <li>BEWH_DaemonHorns</li>
+                    <li>BEWH_KhorneColor</li>
+                </givesGenes>
+                <requiredGenes>
+                    <li>BEWH_KhorneMark</li>
+                </requiredGenes>
+                <forbiddenGenes>
+                    <li>BEWH_UndividedMark</li>
+                    <li>BEWH_TzeentchMark</li>
+                    <li>BEWH_NurgleMark</li>
+                    <li>BEWH_SlaaneshMark</li>
+                </forbiddenGenes>
+            </li>
+        </modExtensions>
     </RecipeDef>
 
     <!-- Daemon Prince Tzeentch -->
@@ -218,6 +330,27 @@
             <Intellectual>14</Intellectual>
             <Crafting>14</Crafting>
         </skillRequirements>
+        <modExtensions>
+            <li Class="BEWH.RitualDefModExtension">
+                <givesGenes>
+                    <li>BEWH_DaemonMutation</li>
+                    <li>BEWH_DaemonHide</li>
+                    <li>BEWH_DaemonWings</li>
+                    <li>BEWH_DaemonTail</li>
+                    <li>BEWH_DaemonHorns</li>
+                    <li>BEWH_TzeencthColor</li>
+                </givesGenes>
+                <requiredGenes>
+                    <li>BEWH_TzeentchMark</li>
+                </requiredGenes>
+                <forbiddenGenes>
+                    <li>BEWH_UndividedMark</li>
+                    <li>BEWH_KhorneMark</li>
+                    <li>BEWH_NurgleMark</li>
+                    <li>BEWH_SlaaneshMark</li>
+                </forbiddenGenes>
+            </li>
+        </modExtensions>
     </RecipeDef>
 
     <!-- Daemon Prince Nurgle -->
@@ -241,6 +374,27 @@
             <Plants>14</Plants>
             <Mining>14</Mining>
         </skillRequirements>
+        <modExtensions>
+            <li Class="BEWH.RitualDefModExtension">
+                <givesGenes>
+                    <li>BEWH_DaemonMutation</li>
+                    <li>BEWH_DaemonHide</li>
+                    <li>BEWH_DaemonWings</li>
+                    <li>BEWH_DaemonTail</li>
+                    <li>BEWH_DaemonHorns</li>
+                    <li>BEWH_NurgleColor</li>
+                </givesGenes>
+                <requiredGenes>
+                    <li>BEWH_NurgleMark</li>
+                </requiredGenes>
+                <forbiddenGenes>
+                    <li>BEWH_UndividedMark</li>
+                    <li>BEWH_KhorneMark</li>
+                    <li>BEWH_TzeentchMark</li>
+                    <li>BEWH_SlaaneshMark</li>
+                </forbiddenGenes>
+            </li>
+        </modExtensions>
     </RecipeDef>
 
     <!-- Daemon Prince Slaanesh -->
@@ -264,6 +418,27 @@
             <Social>14</Social>
             <Artistic>14</Artistic>
         </skillRequirements>
+        <modExtensions>
+            <li Class="BEWH.RitualDefModExtension">
+                <givesGenes>
+                    <li>BEWH_DaemonMutation</li>
+                    <li>BEWH_DaemonHide</li>
+                    <li>BEWH_DaemonWings</li>
+                    <li>BEWH_DaemonTail</li>
+                    <li>BEWH_DaemonHorns</li>
+                    <li>BEWH_SlaaneshColor</li>
+                </givesGenes>
+                <requiredGenes>
+                    <li>BEWH_SlaaneshMark</li>
+                </requiredGenes>
+                <forbiddenGenes>
+                    <li>BEWH_UndividedMark</li>
+                    <li>BEWH_KhorneMark</li>
+                    <li>BEWH_TzeentchMark</li>
+                    <li>BEWH_NurgleMark</li>
+                </forbiddenGenes>
+            </li>
+        </modExtensions>
     </RecipeDef>
 
 
@@ -284,6 +459,22 @@
                 <count>50</count>
             </li>
         </ingredients>
+        <modExtensions>
+            <li Class="BEWH.RitualDefModExtension">
+                <givesGenes>
+                    <li>BEWH_IotaPsyker</li>
+                </givesGenes>
+                <forbiddenGenes>
+                    <li>BEWH_IotaPsyker</li>
+                    <li>BEWH_Psyker</li>
+                    <li>BEWH_DeltaPsyker</li>
+                    <li>BEWH_BetaPsyker</li>
+                    <li>BEWH_SigmaPariah</li>
+                    <li>BEWH_UpsilonPariah</li>
+                    <li>BEWH_OmegaPariah</li>
+                </forbiddenGenes>
+            </li>
+        </modExtensions>
     </RecipeDef>
 
 </Defs>
